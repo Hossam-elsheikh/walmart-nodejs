@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
-const { promisify } = require('utile')
+
+const { promisify } = require('utile');
 async function auth(req, res, next) {
     const {authorization} = req.headers
     if (!authorization) {
