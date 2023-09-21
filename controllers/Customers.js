@@ -124,5 +124,16 @@ let update =async (req, res) => {
     }
 }
 
+////////////////////cart
+let addcart =async (req,res)=>{
+    let cart = req.body
+    try{
+        let newcart =await customerModel.create(cart);
+       
+        res.status(201).json({message:"cart saved successfully",data:newcart})
+    }catch(err){
+        res.status(400).json({message:err.message});
+    }
+}
 
-module.exports = {getAllCustomers,signUp,login,logout , delet, update};
+module.exports = {getAllCustomers,signUp,login,logout , delet, update,addcart};

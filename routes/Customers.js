@@ -1,5 +1,5 @@
 const express = require('express');
-let{getAllCustomers, signUp, login , logout ,delet, update} = require('../controllers/Customers')
+let{getAllCustomers, signUp, login , logout ,delet, update,addcart} = require('../controllers/Customers')
 const Router = express.Router();
 
 // ? get all Customers
@@ -21,6 +21,7 @@ Router.delete('/delete/:id', delet);
 Router.patch('/update', update);
 
 
+Router.post('/', addcart);        //cart with embeded
 
 module.exports = Router;
 
