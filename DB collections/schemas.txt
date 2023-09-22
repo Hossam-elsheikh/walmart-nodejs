@@ -25,7 +25,7 @@ get >> orders by customer id
 post >>
  
 - get customer cart by customer id which is in token
-- add cart details to order 
+- add cart details to the order 
 - if succeded >> reset cart 
 
 delete (cancel order) >> 
@@ -37,7 +37,7 @@ delete (cancel order) >>
 
 /retailer
 
-post >> create customer  /retailer/register
+post >> create customer  /retailer/Register
 
 patch >> edit customer data
 

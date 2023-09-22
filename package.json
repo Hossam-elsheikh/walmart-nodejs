@@ -4,29 +4,18 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "SET SECRET= thisismysecret&nodemon start",
-=======
     "start": "SET SECRET=thisismysecret && nodemon index",
->>>>>>> a5f4d69 (Customer && Auth)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hos",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-=======
     "axios": "^1.5.0",
->>>>>>> a5f4d69 (Customer && Auth)
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-<<<<<<< HEAD
-    "mongoose": "^7.5.0"
-=======
     "mongoose": "^7.5.0",
     "nodemon": "^3.0.1"
->>>>>>> a5f4d69 (Customer && Auth)
   }
 }

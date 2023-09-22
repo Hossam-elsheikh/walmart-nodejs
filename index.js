@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 
 let customerRoute = require ('./routes/Customers.js')
-
+let retailerRoute = require('./routes/Retailers.js')
 // ? ==> Creating app <==
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(cors({
 }))
 // !-----------------------------------------------------------------------
 app.use('/customer',customerRoute);
-
+app.use('/retailer',retailerRoute);
 // !--------------------------- error handling middleWares-----------------------------------
 // ? Not Found MiddleWare
 app.use('*',function(req,res,next){
