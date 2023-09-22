@@ -1,5 +1,6 @@
 const express = require('express');
-let {addNewRetailer,getAllRetailers,loginRetailer} = require('../controllers/Retailers')
+let {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData} = require('../controllers/Retailers')
+let {retailerAuth} = require('../middlewares/retailerAuth')
 const Router = express.Router();
 
 
@@ -9,7 +10,7 @@ Router.post('/login',loginRetailer)
 
 Router.post('/signup',addNewRetailer)
 
-Router.patch('/',) 
+Router.patch('/',retailerAuth,editRetailerData)  
 
 
 module.exports = Router

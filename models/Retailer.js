@@ -6,7 +6,6 @@ let RetailersSchema = mongoose.Schema({
         maxLength:20,
         minLength:4,
         required:true,
-        
     },
     email:{
         type:String,

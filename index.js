@@ -4,6 +4,7 @@ const cors = require('cors')
 
 let customerRoute = require ('./routes/Customers.js')
 let retailerRoute = require('./routes/Retailers.js')
+let productRoute = require('./routes/product.js')
 let cartrouter = require ('./routes/cart.js')
 
 // ? ==> Creating app <==
@@ -19,6 +20,7 @@ app.use(cors({
 // !-----------------------------------------------------------------------
 app.use('/customer',customerRoute);
 app.use('/retailer',retailerRoute);
+app.use('/product',productRoute);
 
 
 
