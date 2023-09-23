@@ -1,6 +1,6 @@
 const express = require('express');
 let {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData} = require('../controllers/Retailers')
-let {auth} = require('../middlewares/auth')
+let {auth} = require('../middlewares/auth');
 const Router = express.Router();
 
 

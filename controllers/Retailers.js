@@ -1,7 +1,9 @@
-let RetailerModel = require('../models/Retailer')
-const jwt =require('jsonwebtoken')
-const bcrypt = require('bcrypt')
-let addNewRetailer= async (req,res)=>{
+let RetailerModel = require('../models/Retailer');
+const jwt =require('jsonwebtoken');
+const bcrypt = require('bcrypt');
+
+// ? SignUp for Retailer
+let addNewRetailer = async (req,res)=>{
     let retailer = req.body
     try{
         let newRetailer = await RetailerModel.create(retailer)
@@ -11,15 +13,17 @@ let addNewRetailer= async (req,res)=>{
     }
 }
 
+// ? Get Retailers
 let getAllRetailers = async (req, res) => {
     try{
-        let retailers = await RetailerModel.find()
+        let retailers = await RetailerModel.find();
         res.status(200).json({message:"retailers data successfully viewed", data: retailers})
     }catch(err){
         res.status(500).json({message:"Something went wrong"})
     }
 }
 
+// ? loging Retailer
 let loginRetailer = async (req, res) => {
     const {email, password} = req.body
     if(!email || !password){
@@ -38,21 +42,12 @@ let loginRetailer = async (req, res) => {
     res.status(200).json({message:"logged in successfully",token:token})
 }
 
-
+// ? update Retailer
 let editRetailerData = async (req,res)=>{
     let retailerID = req.id
     let {name,email,phone}= req.body
     try{
-        let retailer = await RetailerModel.findOne({_id:retailerID})
-        if(name){
-            retailer.name = name
-        }
-        if(email){
-            retailer.email = email
-        }
-        if(phone){
-        retailer.phone = phone
-        }
+        let retailer = await RetailerModel.updateOne({_id:retailerID},{email:email,name:name ,phone});
         res.status(200).json({message:"edited successfully",body:retailer})
 
     }catch(err){

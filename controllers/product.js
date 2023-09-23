@@ -1,6 +1,7 @@
 let productModel = require("../models/Product");
 let customerModel = require("../models/Customers");
 
+// ? add product to Cart
 let addToCart = async (req, res) => {
   let product_id = req.params.id;
   let customer_id = req.id;
@@ -16,13 +17,16 @@ let addToCart = async (req, res) => {
       { _id: customer_id },
       { $push: { cart: product } }
     );
+    // customer.cart.push(product);
+    // customer.save(done)
     res.status(200).json({ message: "successfully added to cart" });
   } catch (err) {
-    // if it's a retailer won't be able to add it to the cart
+    //? if it's a retailer won't be able to add it to the cart
     res.status(401).json({ message: "login first to add to cart" });
   }
 };
 
+// ? new product added
 let addProduct = async (req, res) => {
   // add product and assign retailer_id to it
   let retailer_id = req.id;
@@ -66,6 +70,7 @@ let getAllProducts = async (req, res) => {
     .json({ message: "Products successfully retrieved", products: products });
 };
 
+// ? update product
 let editProduct = async (req, res) => {
   let product_id = req.params.id;
   let retailer_id = req.id;
@@ -96,6 +101,7 @@ let editProduct = async (req, res) => {
   }
 };
 
+// ? delete product
 let deleteProduct = async (req, res) => {
   let product_id = req.params.id;
   let retailer_id = req.id;
