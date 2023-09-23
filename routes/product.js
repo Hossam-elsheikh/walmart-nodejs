@@ -1,15 +1,17 @@
 const express = require('express');
-let {retailerAuth} = require('../middlewares/retailerAuth')
-let {addProduct,getAllProducts,editProduct,deleteProduct} = require('../controllers/product')
+let {auth} = require('../middlewares/auth')
+let {addToCart,addProduct,getAllProducts,editProduct,deleteProduct} = require('../controllers/product')
 const Router = express.Router();
 
 
-Router.get('/',retailerAuth,getAllProducts)
+Router.get('/',auth,getAllProducts) // when retailer gets all products
 
-Router.post('/',retailerAuth,addProduct)
+Router.post('/',auth,addProduct) // when retailer add a product
 
-Router.patch('/:id',retailerAuth,editProduct)
+Router.post('/:id',auth,addToCart) // when user add to cart 
 
-Router.delete('/:id',retailerAuth,deleteProduct)
+Router.patch('/:id',auth,editProduct) // when retailer edit a product
+
+Router.delete('/:id',auth,deleteProduct) // when retailer delete a product
 
 module.exports = Router

@@ -37,11 +37,10 @@ let login = async (req ,res)=>{
             console.log(customer);
             if(customer){
                 let isValid = await bcrypt.compare(password,customer.password);
-
                 if(isValid){
                     //* generate token
                     console.log(customer.role);
-                    const token =  jwt.sign({_id:customer.id ,email:customer.email , name:customer.name , role:customer.role},process.env.SECRET,{expiresIn:'1h'});
+                    const token =  jwt.sign({id:customer._id ,email:customer.email , name:customer.name , role:customer.role},process.env.SECRET,{expiresIn:'1h'});
                     res.status(200).json({message:"login successfull",data:customer,token});
                 }else{
                     res.status(400).json({message:"password or email is wrong"});

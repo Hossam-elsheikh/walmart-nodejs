@@ -18,7 +18,7 @@ let RetailersSchema = mongoose.Schema({
     },
     phone:{
         type:String,
-        required:true,
+        // required:true,
         unique:true,
         VarDate:function(v){
             return /^[0-9]{11}$/.test(v);
@@ -27,7 +27,7 @@ let RetailersSchema = mongoose.Schema({
     },
     role:{
         type:String,
-        default:'retailer'
+        value:'retailer'
     },
     categories:{
         type: Array,

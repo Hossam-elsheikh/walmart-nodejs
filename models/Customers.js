@@ -28,20 +28,18 @@ let customerSchema = mongoose.Schema({
     },
     address:{
         type:String,
-        required:true
+        // required:true
     },
     city:{
         type:String,
-        required:true
+        // required:true
     },
     role:{
         type:String,
-        enum:['admin','user'],
-        default:'user'
+        value:'user'
     },
-    cart_Id:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Cart'
+    cart:{
+        type:Array,
     }
 
 },{timestamps: true});

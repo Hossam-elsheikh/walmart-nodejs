@@ -5,7 +5,6 @@ const cors = require('cors')
 let customerRoute = require ('./routes/Customers.js')
 let retailerRoute = require('./routes/Retailers.js')
 let productRoute = require('./routes/product.js')
-let cartrouter = require ('./routes/cart.js')
 
 // ? ==> Creating app <==
 const app = express();
@@ -25,8 +24,8 @@ app.use('/product',productRoute);
 
 
 // !-----------------------------order(cart)------------------------------------------
-app.use('/cart',customerRoute)
-app.use('/mycart',cartrouter) 
+// app.use('/cart',customerRoute)
+// app.use('/mycart',cartrouter) 
 
 
 // !--------------------------- error handling middleWares-----------------------------------
