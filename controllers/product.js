@@ -9,12 +9,13 @@ let addToCart = async (req, res) => {
     res.status(401).json({ message: "please login first to add to cart" });
   }
   try {
-    let customer = await customerModel.findOne({ _id: customer_id });
-    let product = await productModel.findOne({ _id: product_id });
-    customer.cart = [...customer.cart, product];
+      let product = await productModel.findOne({ _id: product_id });
+      await customerModel.updateOne({ _id: customer_id },{$push:{cart: product}});
+    // customer.cart.push(product);
+    // customer.save(done)
     res
       .status(200)
-      .json({ message: "successfully added to cart", cart: customer.cart });
+      .json({ message: "successfully added to cart" });
   } catch (err) {
     // if it's a retailer won't be able to add it to the cart
     res.status(401).json({ message: "login first to add to cart" });
