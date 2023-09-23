@@ -27,7 +27,7 @@ let RetailersSchema = mongoose.Schema({
     },
     role:{
         type:String,
-        value:'retailer'
+        default:'retailer'
     },
     categories:{
         type: Array,

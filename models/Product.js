@@ -14,6 +14,10 @@ let ProductSchema = mongoose.Schema({
     discount:{
         type: Number,
     },
+    quantity:{
+        type : Number,
+        default: 1
+    },
     department:{
         type: String,
         ref:"Department"
@@ -21,6 +25,7 @@ let ProductSchema = mongoose.Schema({
     spec:{
         type: String,
     },
+    
     rating:{
         type: Number
     },

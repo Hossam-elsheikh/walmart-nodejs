@@ -27,11 +27,11 @@ let loginRetailer = async (req, res) => {
     }
     const retailer = await RetailerModel.findOne({email: email})
     if(!retailer){
-        res.status(404).json({message:"wrong email or password"})
+       return res.status(404).json({message:"wrong email or password"})
     }
     const isValid = await bcrypt.compare(password,retailer.password)
     if (!isValid){
-        res.status(401).json({message:"wrong email or password"})
+       return res.status(401).json({message:"wrong email or password"})
     }
 
     const token = jwt.sign({email:retailer.email,role:retailer.role,id:retailer._id},process.env.SECRET)

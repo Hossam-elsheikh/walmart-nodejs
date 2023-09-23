@@ -19,7 +19,7 @@ let customerSchema = mongoose.Schema({
     },
     phone:{
         type:String,
-        required:true,
+        // required:true,
         unique:true,
         VarDate:function(v){
             return /^[0-9]{11}$/.test(v);
@@ -36,7 +36,7 @@ let customerSchema = mongoose.Schema({
     },
     role:{
         type:String,
-        value:'user'
+        default:'user' 
     },
     cart:{
         type:Array,
