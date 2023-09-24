@@ -65,18 +65,25 @@ let editQuantity = async (req,res) => {
     let role =req.role;
     let product_id = req.params.id
     let newQuantity = req.params.quantity
+    
     if(role !== 'user') return res.status(401).json({message: 'You Are Not A User'});
         
     try {
         let customer = await customerModel.findOne({_id:id});
-         let cart  =customer.cart.filter((pro)=>  {
-            pro._id === product_id
-            pro.quantity = newQuantity
-            console.log("done::1");
-        });
+         let newCart  = customer.cart.filter((pro)=> {
+        
+           if(pro._id == product_id){
+            console.log("done::1");            
+            
+            return pro.quantity = newQuantity;
 
+           }
+          
+        });
         let updatedCustomer = await customerModel.updateOne({_id:id} , {$set : {cart:newCart}});
-        res.status(200).json({message:"Quantity Updated Successfully", NewCart: updatedCustomer});    
+        console.log(customer.cart);
+
+        res.status(200).json({message:"Quantity Updated Successfully",  cartUpdat:customer.cart});    
     }catch(err){
         res.status(500).json({message: err.message});
     }

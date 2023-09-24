@@ -8,7 +8,7 @@ Router.get('/',auth,getCart)
 
 Router.patch('/:id',auth,deleteProduct)
 
-Router.patch('/:id/?quantity',auth,editQuantity)
+Router.patch('/:id/:quantity',auth,editQuantity)
 
 Router.delete('/',auth,emptyCart)
 
