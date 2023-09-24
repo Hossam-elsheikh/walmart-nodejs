@@ -3,11 +3,12 @@ let customerModel = require("../models/Customers");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
+// ? get the customer Cart 
 let getCart = async (req, res) => {
   let id = req.id;
   let role = req.role;
   if (role !== "user") {
-    return res.status(401).json({ message: "login as a user" });
+    return res.status(401).json({ message: "You Are Not A User" });
   }
 
   try {
@@ -20,6 +21,7 @@ let getCart = async (req, res) => {
   }
 };
 
+// ? delete an item from the cart 
 let deleteProduct = async (req, res) => {
   let id = req.id;
   let role = req.role;
@@ -42,12 +44,12 @@ let deleteProduct = async (req, res) => {
   }
 };
 
-
+//? delete cart items 
 let emptyCart = async (req, res) => {
   let id = req.id;
   let role = req.role;
   if (role !== "user") {
-    return res.status(401).json({ message: "login as a user" });
+    return res.status(401).json({ message: "You Are Not A User" });
   }
   try {
     await customerModel.updateOne({ _id: id }, { $set: { cart: [] } });
@@ -55,9 +57,29 @@ let emptyCart = async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
-};
+}
 
+// ? updating the Quantity of an item
 let editQuantity = async (req,res) => {
+    let id = req.id;
+    let role =req.role;
+    let product_id = req.params.id
+    let newQuantity = req.params.quantity
+    if(role !== 'user') return res.status(401).json({message: 'You Are Not A User'});
+        
+    try {
+        let customer = await customerModel.findOne({_id:id});
+         let cart  =customer.cart.filter((pro)=>  {
+            pro._id === product_id
+            pro.quantity = newQuantity
+            console.log("done::1");
+        });
+
+        let updatedCustomer = await customerModel.updateOne({_id:id} , {$set : {cart:newCart}});
+        res.status(200).json({message:"Quantity Updated Successfully", NewCart: updatedCustomer});    
+    }catch(err){
+        res.status(500).json({message: err.message});
+    }
 
 }
 
