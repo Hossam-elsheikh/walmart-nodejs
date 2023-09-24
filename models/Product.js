@@ -11,12 +11,16 @@ let ProductSchema = mongoose.Schema({
         type:Number,
         required: true
     },
+    quantity:{
+        type: Number,
+        default:1
+    },
     discount:{
         type: Number,
     },
-    quantity:{
+    stock:{
         type : Number,
-        default: 1
+        default: 300
     },
     department:{
         type: String,

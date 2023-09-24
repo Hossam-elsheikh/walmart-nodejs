@@ -13,16 +13,19 @@ let addToCart = async (req, res) => {
   }
   try {
     let product = await productModel.findOne({ _id: product_id });
+    let customerCart = await customerModel.findOne({ _id: customer_id},{cart:1,_id:0})
+    let isAdded = await customerCart.cart.find((p)=> p._id == product_id)
+    if(isAdded){
+      return res.status(400).json({message:"you already have this product in your cart"})
+    }
     await customerModel.updateOne(
       { _id: customer_id },
-      { $push: { cart: product } }
-    );
-    // customer.cart.push(product);
-    // customer.save(done)
+      { $push: { cart:  product} }
+    ); 
     res.status(200).json({ message: "successfully added to cart" });
   } catch (err) {
     //? if it's a retailer won't be able to add it to the cart
-    res.status(401).json({ message: "login first to add to cart" });
+    res.status(401).json({ message: err.message });
   }
 };
 
