@@ -1,7 +1,5 @@
 let customerModel = require("../models/Customers");
 
-const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
 
 // ? get the customer Cart 
 let getCart = async (req, res) => {
@@ -13,6 +11,9 @@ let getCart = async (req, res) => {
 
   try {
     let customer = await customerModel.findOne({ _id: id });
+    if(!customer){
+      return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+    }
     res
       .status(200)
       .json({ message: "cart successfully retrieved", cart: customer.cart });
@@ -31,6 +32,9 @@ let deleteProduct = async (req, res) => {
   }
   try {
     let customer = await customerModel.findOne({ _id: id });
+    if(!customer){
+      return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+    }
     let newCart = customer.cart.filter((p) => p._id != product_id);
     let updatedCustomer = await customerModel.updateOne(
       { _id: id },
@@ -51,6 +55,10 @@ let emptyCart = async (req, res) => {
   if (role !== "user") {
     return res.status(401).json({ message: "You Are Not A User" });
   }
+  let customer = await customerModel.findOne({ _id: id });
+  if(!customer){
+      return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+    }
   try {
     await customerModel.updateOne({ _id: id }, { $set: { cart: [] } });
     res.status(200).json({ message: "cart is empty now" });
@@ -62,21 +70,22 @@ let emptyCart = async (req, res) => {
 // ? updating the Quantity of an item
 let editQuantity = async (req,res) => {
     let id = req.id;
+    
     let role =req.role;
     let product_id = req.params.id
     let newQuantity = req.params.quantity
-    
+   
     if(role !== 'user') return res.status(401).json({message: 'You Are Not A User'});
         
     try {
         let customer = await customerModel.findOne({_id:id});
-         let newCart  = customer.cart.filter((pro)=> {
+        if(!customer){
+          return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+        }
+        let newCart  = customer.cart.filter((pro)=> {
         
-           if(pro._id == product_id){
-            console.log("done::1");            
-            
+           if(pro._id == product_id){ 
             return pro.quantity = newQuantity;
-
            }
           
         });
@@ -90,5 +99,31 @@ let editQuantity = async (req,res) => {
 
 }
 
+// ? total Price of tha cart Products
+let totalPrice = async (req,res)=>{
+  id = req.id;
+  role = req.role;
+  let totalPrice = 0 ;
+  if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
 
-module.exports = { getCart, deleteProduct, emptyCart ,editQuantity};
+  try{
+    let customer = await customerModel.findOne({_id:id});
+    if(!customer){
+      return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+    }
+    console.log(customer);
+    let newCart = customer.cart.map((pro)=>{
+      let prodPrice = pro.price * pro.quantity;
+      totalPrice += prodPrice;
+      return totalPrice;
+    })
+
+    console.log(totalPrice);
+    res.status(200).json({message:"total Prcie is",  totalPrice : totalPrice});  
+  
+  }catch(err){
+    res.status(500).json({message : err.message});
+  }
+}
+
+module.exports = { getCart, deleteProduct, emptyCart ,editQuantity , totalPrice};
