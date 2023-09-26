@@ -7,7 +7,7 @@ let retailerRoute = require('./routes/Retailers.js')
 let productRoute = require('./routes/product.js')
 let cartRoute = require('./routes/cart.js')
 let orderRoute = require('./routes/orders.js')
-
+let paymentRoute = require('./routes/payment.js')
 
 // ? ==> Creating app <==
 const app = express();
@@ -25,7 +25,7 @@ app.use('/retailer',retailerRoute);
 app.use('/product',productRoute);
 app.use('/customer/cart',cartRoute);
 app.use('/customer/order',orderRoute);
-
+app.use('/payment',paymentRoute);
 
 // !-----------------------------order(cart)------------------------------------------
 // app.use('/cart',customerRoute)
