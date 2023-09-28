@@ -27,10 +27,6 @@ app.use('/customer/cart',cartRoute);
 app.use('/customer/order',orderRoute);
 app.use('/payment',paymentRoute);
 
-// !-----------------------------order(cart)------------------------------------------
-// app.use('/cart',customerRoute)
-// app.use('/mycart',cartrouter) 
-
 
 // !--------------------------- error handling middleWares-----------------------------------
 // ? Not Found MiddleWare

@@ -6,7 +6,7 @@ const Router = express.Router();
 // ? get 
 Router.get('/', auth,getPayment);
 
-// ? 
+// ? create payment
 Router.post('/',auth ,paymentForm);
 
 
