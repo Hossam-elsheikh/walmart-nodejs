@@ -39,7 +39,7 @@ app.use(function(err,req,res,next){
 });
 // !-------------------------------------------------------------
 // ?====> Connect to MongoDB <=======
-mongoose.connect('mongodb://127.0.0.1:27017/WalmartDB').then(()=>{
+mongoose.connect('mongodb+srv://hossammelsheikh:BLzLjKDDSE7AdnDw@data.ewilhir.mongodb.net/walmart?retryWrites=true&w=majority').then(()=>{
     console.log('Conected to Mongo DB Successefully');
 }).catch((err)=>{
     console.log(err);
