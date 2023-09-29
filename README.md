@@ -2,7 +2,7 @@
 
 ## Routes 
 ### Retailer
-(get)/retailr --  gets all retailers
+(get)/retailer --  gets all retailers
 (post)/retailer/signup -- add new retailer
 (post)/retailer/login -- login retailer
 (patch)/retailer -- edit retailer data
