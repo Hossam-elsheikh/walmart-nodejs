@@ -16,7 +16,7 @@ let addToCart = async (req, res) => {
     let customerCart = await customerModel.findOne({ _id: customer_id},{cart:1,_id:0})
     let isAdded = await customerCart.cart.find((p)=> p._id == product_id)
     if(isAdded){
-      return res.status(400).json({message:"you already have this product in your cart"})
+      return res.status(400).json({ message:"you already have this product in your cart" })
     }
     await customerModel.updateOne(
       { _id: customer_id },

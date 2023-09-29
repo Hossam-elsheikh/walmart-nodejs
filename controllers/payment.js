@@ -1,6 +1,5 @@
 require('dotenv').config();
 const customerModel = require('../models/Customers');
-// const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const paymentModel = require('../models/Payment')
 
 
@@ -14,7 +13,7 @@ let paymentForm= async (req,res)=>{
     if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
     try{  
         let customer = await customerModel.findOne({_id : id})
-        let newCart = customer.cart.map((pro)=>{
+        customer.cart.map((pro)=>{
             let prodPrice = pro.price * pro.quantity;
             totalPrice += prodPrice;
             return totalPrice;

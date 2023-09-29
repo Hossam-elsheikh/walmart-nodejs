@@ -13,7 +13,7 @@ Router.post('/signup', signUp);
 Router.post('/login', login);
 
 //? logout
-Router.patch('/logout',auth, logout);
+Router.patch('/logout',auth, logout);   
 
 //? delete
 Router.delete('/delete/:id', auth , delet);
