@@ -7,9 +7,17 @@ let ProductSchema = mongoose.Schema({
         minLength:6,
 
     },
+    description:{
+        type:String,
+        required: true,
+    },
     price:{
         type:Number,
         required: true
+    },
+    discountPercentage:{
+        type:Number,
+        required:true
     },
     quantity:{
         type: Number,
@@ -26,12 +34,23 @@ let ProductSchema = mongoose.Schema({
         type: String,
         ref:"Department"
     },
+    brand:{
+        type:String,
+    },
     spec:{
         type: String,
     },
-    
     rating:{
         type: Number
+    },
+    category:{
+        type:String,
+    },
+    thumbnail:{
+        type:String
+    },
+    images:{
+        type:Array
     },
     retailer_id:{
         type: mongoose.SchemaTypes.ObjectId,
