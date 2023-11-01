@@ -1,10 +1,13 @@
 const express = require('express');
-let{getAllCustomers, signUp, login , logout ,delet, update,addcart} = require('../controllers/Customers');
+let{getAllCustomers, signUp, login , logout ,delet, update,addcart ,check } = require('../controllers/Customers');
 const { auth } = require('../middlewares/auth');
 const Router = express.Router();
 
 // ? get all Customers
 Router.get('/', getAllCustomers);
+
+// ? chack if customer is found
+Router.post('/check', check);
 
 // ? signUp customer
 Router.post('/signup', signUp);

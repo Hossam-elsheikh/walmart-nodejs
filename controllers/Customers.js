@@ -26,6 +26,25 @@ let signUp =async (req,res)=>{
     }
 }
 
+// ? check 
+let check = async(req,res)=>{
+    let {email} = req.body
+        try{
+            let customer = await customerModel.findOne({email: email})
+            if(!customer){
+                res.status(201).json({message:"customer Not found",data:false});
+            }else{
+                res.status(201).json({message:"customer found",data:true});
+            }
+            
+        }catch(err){
+            res.status(400).json({message:err.message});
+        }
+    
+    
+}
+
+
 // ? log in customer
 let login = async (req ,res)=>{
     let {email,password} = req.body;
@@ -34,12 +53,12 @@ let login = async (req ,res)=>{
     }else{
         try{
             let customer = await customerModel.findOne({email:email});
-            console.log(customer);
+            // console.log(customer);
             if(customer){
                 let isValid = await bcrypt.compare(password,customer.password);
                 if(isValid){
                     //* generate token
-                    console.log(customer.role);
+                    // console.log(customer.role);
                     const token =  jwt.sign({id:customer._id ,email:customer.email , name:customer.name , role:customer.role},process.env.SECRET,{expiresIn:'1h'});
                     res.status(200).json({message:"login successfull",data:customer,token});
                 }else{
@@ -65,7 +84,7 @@ let logout = async (req ,res)=>{
             if(err){
                 res.status(400).json({message:"token is invalid",});
             }else{
-                console.log(delete axios.defaults.headers.common['Authorization']);
+                // console.log(delete axios.defaults.headers.common['Authorization']);
             //    axios.defaults.headers.delete["Authorization"];
                 
                 res.status(200).json({message:"logout successfull"});
@@ -82,7 +101,7 @@ let logout = async (req ,res)=>{
 let delet =async (req, res)=>{
     
     let {id} = req.params
-    console.log(id); 
+    // console.log(id); 
 try{
     let customer = await customerModel.findOne({_id:id});
     // console.log(customer);
@@ -105,7 +124,7 @@ let update =async (req, res) => {
   
     try{
     let decoded = jwt.verify(token,process.env.SECRET,async(err,decoded)=>{    
-        console.log(decoded);   
+        // console.log(decoded);   
         if(err){
             res.status(400).json({message:"token is invalid",});
         }else{
@@ -113,13 +132,13 @@ let update =async (req, res) => {
             let customer = await customerModel.findOne({_id:decoded._id})
             
             let updatedCustomer = await customerModel.updateOne({_id:customer.id},{email:newEmail,name:newName})
-            console.log(updatedCustomer);
+            // console.log(updatedCustomer);
             res.status(200).json({message:"updated your data successfully"})
             
         }})
     }catch(err){
         res.status(500).json({message:err.message})
-        console.log(err.message);
+        // console.log(err.message);
     }
 }
 
@@ -135,4 +154,4 @@ let addcart =async (req,res)=>{
     }
 }
 
-module.exports = {getAllCustomers,signUp,login,logout , delet, update,addcart};
+module.exports = {getAllCustomers,signUp,login,logout , delet, update,addcart , check };
