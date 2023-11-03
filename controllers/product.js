@@ -1,6 +1,14 @@
 let productModel = require("../models/Product");
 let customerModel = require("../models/Customers");
 
+let getAllProducts = async (req, res) => {
+  try {
+    let products = await productModel.find({})
+    res.status(200).json(products);
+  }catch(err) {
+    res.json({ message: err.message });
+  }
+}
 // ? add product to Cart
 let addToCart = async (req, res) => {
   let product_id = req.params.id;
@@ -54,7 +62,7 @@ let addProduct = async (req, res) => {
   }
 };
 
-let getAllProducts = async (req, res) => {
+let getRetailerProducts = async (req, res) => {
   // Get all products by this retailer
   let retailer_id = req.id;
   let role = req.role;
@@ -134,6 +142,7 @@ let deleteProduct = async (req, res) => {
 module.exports = {
   addToCart,
   getAllProducts,
+  getRetailerProducts,
   addProduct,
   editProduct,
   deleteProduct,

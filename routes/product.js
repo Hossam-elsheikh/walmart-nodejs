@@ -1,10 +1,12 @@
 const express = require('express');
 let {auth} = require('../middlewares/auth')
-let {addToCart,addProduct,getAllProducts,editProduct,deleteProduct} = require('../controllers/product')
+let {addToCart,addProduct,getAllProducts,editProduct,deleteProduct,getRetailerProducts} = require('../controllers/product')
 const Router = express.Router();
 
-
-Router.get('/',auth,getAllProducts) // when retailer gets all products
+// important 
+// i've removed auth middleware in product temporarily
+Router.get('/',auth,getRetailerProducts) // when retailer gets all products
+Router.get('/all',getAllProducts) // when anyone gets all products
 
 Router.post('/',auth,addProduct) // when retailer add a product
 
