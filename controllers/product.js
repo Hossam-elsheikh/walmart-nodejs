@@ -9,6 +9,17 @@ let getAllProducts = async (req, res) => {
     res.json({ message: err.message });
   }
 }
+
+let getByCat =async (req, res) => {
+    let category = req.params.category
+    try{
+        let data = await productModel.find({ category: category})
+        res.status(200).json(data)
+    }catch(err) {
+      res.json(err.message)
+    }
+
+}
 // ? add product to Cart
 let addToCart = async (req, res) => {
   let product_id = req.params.id;
@@ -18,7 +29,7 @@ let addToCart = async (req, res) => {
     return res
       .status(401)
       .json({ message: "please login first to add to cart" });
-  }
+  } 
   try {
     let product = await productModel.findOne({ _id: product_id });
     let customerCart = await customerModel.findOne({ _id: customer_id},{cart:1,_id:0})
@@ -146,4 +157,5 @@ module.exports = {
   addProduct,
   editProduct,
   deleteProduct,
+  getByCat
 };
