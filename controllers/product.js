@@ -3,23 +3,22 @@ let customerModel = require("../models/Customers");
 
 let getAllProducts = async (req, res) => {
   try {
-    let products = await productModel.find({})
+    let products = await productModel.find({});
     res.status(200).json(products);
-  }catch(err) {
+  } catch (err) {
     res.json({ message: err.message });
   }
-}
+};
 
-let getByCat =async (req, res) => {
-    let category = req.params.category
-    try{
-        let data = await productModel.find({ category: category})
-        res.status(200).json(data)
-    }catch(err) {
-      res.json(err.message)
-    }
-
-}
+let getByCat = async (req, res) => {
+  let category = req.params.category;
+  try {
+    let data = await productModel.find({ category: category });
+    res.status(200).json(data);
+  } catch (err) {
+    res.json(err.message);
+  }
+};
 // ? add product to Cart
 let addToCart = async (req, res) => {
   let product_id = req.params.id;
@@ -29,22 +28,30 @@ let addToCart = async (req, res) => {
     return res
       .status(401)
       .json({ message: "please login first to add to cart" });
-  } 
-  try {
-    let product = await productModel.findOne({ _id: product_id });
-    let customerCart = await customerModel.findOne({ _id: customer_id},{cart:1,_id:0})
-    let isAdded = await customerCart.cart.find((p)=> p._id == product_id)
-    if(isAdded){
-      return res.status(400).json({ message:"you already have this product in your cart" })
+  }
+
+  let product = await productModel.findOne({ _id: product_id });
+  let customerCart = await customerModel.findOne(
+    { _id: customer_id },
+    { cart: 1, _id: 0 }
+  );
+  let isAdded = await customerCart.cart.find((p) => p._id == product_id);
+  if (isAdded) {
+    return res
+      .status(200)
+      .json({message:"you already have this product in your cart"});
+  } else {
+    try {
+      await customerModel.updateOne(
+        { _id: customer_id },
+        { $push: { cart: product } }
+      );
+      res.status(200).json({ message: "successfully added to cart" });
+    } catch (err) {
+      //? if it's a retailer won't be able to add it to the cart
+      err.message = "please login first";
+      res.status(401).json({ message: "please login first" });
     }
-    await customerModel.updateOne(
-      { _id: customer_id },
-      { $push: { cart:  product} }
-    ); 
-    res.status(200).json({ message: "successfully added to cart" });
-  } catch (err) {
-    //? if it's a retailer won't be able to add it to the cart
-    res.status(401).json({ message: err.message });
   }
 };
 

@@ -4,7 +4,7 @@ const { promisify } = require('util');
 async function auth(req, res, next) {
     const {authorization} = req.headers
     if (!authorization) {
-        return res.status(401).json({message:"Please Login First"})
+        return res.status(401).json({message:"Please Login First dude!"})
     }
     try{
         let decoded =await promisify(jwt.verify)(authorization,process.env.SECRET);
@@ -12,7 +12,7 @@ async function auth(req, res, next) {
         req.role = decoded.role
         next();
     }catch(err){
-        return res.status(401).json({message:"Please Login First"})
+        return res.status(401).json({message:"Please Login First hah!"})
     }
 }
 
