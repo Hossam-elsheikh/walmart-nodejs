@@ -48,6 +48,17 @@ let addToCart = async (req, res) => {
   }
 };
 
+// ? get a specific product by id 
+let getProductById = async (req, res) => {
+  let {id} = req.params;
+  try {
+    let product = await productModel.findOne({ _id: id });
+    res.status(200).json({ message: "Successfully" , data: product });
+  } catch (err) {
+    res.status(401).json({ message: err.message });
+  }
+};
+
 // ? new product added
 let addProduct = async (req, res) => {
   // add product and assign retailer_id to it
@@ -157,5 +168,7 @@ module.exports = {
   addProduct,
   editProduct,
   deleteProduct,
-  getByCat
+  getByCat,
+  getProductById
+
 };
