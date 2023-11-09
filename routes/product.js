@@ -14,10 +14,6 @@ Router.post('/',auth,addProduct) // when retailer add a product
 
 Router.get('/details/:id',getProductById)  // when anyone gets Product By Id
 
-Router.post('/favorites',addToFav)  // when user add Product to favorites
-
-Router.get('/getFav',auth,getFavorite)  // when user get Product from favorites
-
 Router.post('/:id',auth,addToCart) // when user add to cart 
 
 Router.patch('/:id',auth,editProduct) // when retailer edit a product

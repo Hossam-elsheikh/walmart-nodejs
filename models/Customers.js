@@ -40,8 +40,10 @@ let customerSchema = mongoose.Schema({
     },
     cart:{
         type:Array,
+    },
+    wishList:{
+        type:Array
     }
-
 },{timestamps: true});
 
 // ?=====> hashing the Password <======
