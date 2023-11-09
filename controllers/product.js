@@ -55,6 +55,17 @@ let addToCart = async (req, res) => {
   }
 };
 
+// ? get a specific product by id 
+let getProductById = async (req, res) => {
+  let {id} = req.params;
+  try {
+    let product = await productModel.findOne({ _id: id });
+    res.status(200).json({ message: "Successfully" , data: product });
+  } catch (err) {
+    res.status(401).json({ message: err.message });
+  }
+};
+
 // ? new product added
 let addProduct = async (req, res) => {
   // add product and assign retailer_id to it
@@ -157,6 +168,49 @@ let deleteProduct = async (req, res) => {
   }
 };
 
+//? add product to favorites list
+let addToFav = async (req, res) => {
+  let {id} = req.body
+  console.log(id);
+  let favorites ;
+  // let role = req.role;
+  // console.log(role);
+  // if (role !== "user") {
+  //   res.status(401).json({
+  //     message:
+  //       "you're not allowed to add a product to favorite , you are a retailer",
+  //   });
+  // }
+  try{
+      let prd = await productModel.updateOne({_id: id},{favorite:true})
+      favorites =await productModel.find({favorite:true})
+    res.status(200).json({message:"successfully", data: favorites});
+  }
+   catch(err) {
+    res.status(401).json({ message: "failed to add to favorite " });
+  }
+}
+
+// ?get fav product
+let getFavorite = async (req, res)=>{
+console.log('hiiiiiiiii');
+
+let favorites  ;
+let role = req.role;
+if (role !== "user") {
+  res.status(401).json({
+    message:
+      "you're not allowed to add a product to favorite , you are a retailer",
+  });
+}
+try{
+    favorites =await productModel.find({favorite:true})
+    res.status(200).json({message:"successfully", data: favorites});
+}
+ catch(err) {
+  res.status(401).json({ message: "failed to add to favorite " });
+}
+}
 module.exports = {
   addToCart,
   getAllProducts,
@@ -165,4 +219,8 @@ module.exports = {
   editProduct,
   deleteProduct,
   getByCat,
+  getProductById,
+  addToFav,
+  getFavorite
+
 };
