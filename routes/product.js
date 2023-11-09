@@ -12,6 +12,7 @@ Router.get('/:category',getByCat) // when anyone gets by category
 
 Router.post('/',auth,addProduct) // when retailer add a product
 
+Router.post('/:id',addToCart) // when user add to cart 
 Router.get('/details/:id',getProductById)  // when anyone gets Product By Id
 
 Router.post('/:id',auth,addToCart) // when user add to cart 
