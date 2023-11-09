@@ -12,6 +12,5 @@ Router.patch('/:id',auth,deleteProduct)
 
 Router.delete('/',auth,emptyWishList)
 
-
-
 module.exports = Router;
+
