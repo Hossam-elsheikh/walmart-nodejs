@@ -12,7 +12,7 @@ Router.get('/:category',getByCat) // when anyone gets by category
 
 Router.post('/',auth,addProduct) // when retailer add a product
 
-Router.post('/:id',auth,addToCart) // when user add to cart 
+Router.post('/:id',addToCart) // when user add to cart 
 
 Router.patch('/:id',auth,editProduct) // when retailer edit a product
 
