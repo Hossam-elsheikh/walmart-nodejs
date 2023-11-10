@@ -21,6 +21,24 @@ let getCart = async (req, res) => {
     res.status(500).json({ message: "something went wrong, try again" });
   }
 };
+let replaceCart = async(req, res) => {
+  let newCart = req.body.newCart;
+  let id = req.id;
+let role = req.role;
+if (role !== "user") {
+  return res.status(401).json({ message: "You Are Not A User" });
+}
+  try{
+    let customer = await customerModel.findOne({ _id: id });
+    if(!customer){
+      return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
+    }
+    await customerModel.updateOne({_id:id} , {$set : {cart: newCart}});
+    res.status(200).json({message: 'Cart updated successfully'})
+  }catch(e){
+    res.status(500).json({message:"Cart not found"})
+  }
+}
 let addOldCart = async (req, res) => {
     let LocalCart = req.body.localCart;
     let id = req.id;
@@ -35,8 +53,9 @@ let addOldCart = async (req, res) => {
       }
       let newCart = [...customer.cart, ...LocalCart]
       await customerModel.updateOne({_id:id} , {$set : {cart: newCart}});
+      res.status(200).json({message: 'Cart updated successfully'})
     }catch(e){
-
+      res.status(500).json({message:"Cart not found"})
     }
 }
 // ? delete an item from the cart 
@@ -143,4 +162,4 @@ let totalPrice = async (req,res)=>{
   }
 }
 
-module.exports = { getCart, deleteProduct, emptyCart ,editQuantity , totalPrice,addOldCart};
+module.exports = { getCart, deleteProduct, emptyCart ,editQuantity , totalPrice,addOldCart,replaceCart};
