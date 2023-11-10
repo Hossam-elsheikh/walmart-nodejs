@@ -12,7 +12,7 @@ async function auth(req, res, next) {
         req.role = decoded.role
         next();
     }catch(err){
-        return res.status(401).json({message:"Please Login First hah!"})
+        return res.status(401).json({message:"Please Login First hah!", data:err.message})
     }
 }
 
