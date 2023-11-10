@@ -6,8 +6,6 @@ let addtoWishList = async (req, res) => {
   let product_id = req.params.id;
   let customer_id = req.id;
   let role = req.role;
-
-  console.log(role);
   if (role != "user") {
     return res
       .status(401)

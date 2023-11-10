@@ -56,9 +56,10 @@ let ProductSchema = mongoose.Schema({
         type: mongoose.SchemaTypes.ObjectId,
         ref:'Retailer'
     },
-    favorite:{
+    isFavorite:{
         type:Boolean,
-    }
+    },
+    
 },{timestamps:true})
 
 const productModel = mongoose.model('Product',ProductSchema)
