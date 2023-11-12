@@ -45,6 +45,7 @@ let addtoWishList = async (req, res) => {
 let getWishList = async (req, res) => {
   let id = req.id;
   let role = req.role;
+  let name = req.name;
   if (role !== "user") {
     return res.status(401).json({ message: "You Are Not A User" });
   }
@@ -61,6 +62,7 @@ let getWishList = async (req, res) => {
       .json({
         message: "WishList successfully retrieved",
         wishList: customer.wishList,
+        name:name,
       });
   } catch (err) {
     res.status(500).json({ message: "something went wrong, try again" });
