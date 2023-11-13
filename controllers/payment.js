@@ -1,34 +1,26 @@
 require('dotenv').config();
 const customerModel = require('../models/Customers');
 const paymentModel = require('../models/Payment')
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 
 // !============> Simple Payment Form <==============
 let paymentForm= async (req,res)=>{
-    id = req.id
-    role = req.role
-    let totalPrice = 0 ;
-    let payment = req.body;
-
+    const {amount} = req.body;
+    const {value} = req.body
+    const {cart} = req.body;
+    let id = req.id
+    let role = req.role
     if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
-    try{  
-        let customer = await customerModel.findOne({_id : id})
-        customer.cart.map((pro)=>{
-            let prodPrice = pro.price * pro.quantity;
-            totalPrice += prodPrice;
-            return totalPrice;
+    try{
+
+        const paymentIntent = await stripe.paymentIntents.create({
+            amount,
+            currency: 'usd',
           });
-        payment.customerCart = customer.cart;
-        payment.customer_Id = customer._id;
-        payment.phoneNumber = customer.phone;
-        payment.email = customer.email;
-        payment.full_name = customer.name
-        payment.amount = totalPrice;
-        let payInfo = await paymentModel.create(payment);
-      
-        res.status(200).json({message:'payment Sucessfully done', payInfo:payInfo});
+        res.status(200).send(paymentIntent.client_secret)
     }catch(err){
-        res.status(403).json({message: err.message});
+        res.status(500).json({message: err.message});
     }
 }
 

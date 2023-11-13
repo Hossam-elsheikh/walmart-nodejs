@@ -1,7 +1,7 @@
 const { mongoose } = require("mongoose");
 const paymentSchema = new mongoose.Schema(
   {
-    full_name: {
+    name: {
       type: String,
       required: true,
     },
@@ -9,19 +9,14 @@ const paymentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    customerCart:{
+    cart:{
       type:Array,
     },
     amount: {
       type: Number,
       required: true,
     },
-    cardNumber: {
-      type: String,
-      default:'card',
-      required: true,
-    },
-    phoneNumber:{
+    phone:{
       type:String,
       // required:true,
       unique:true,
@@ -30,11 +25,9 @@ const paymentSchema = new mongoose.Schema(
       },
       message : props=> `${props.value} is not a valid phone number..!`
   },
-    currrency: {
-      type: String,
-      dafault: "usd",
-      required: true,
-    },
+  address:{
+    type:String
+  },
     customer_Id: {
       type: mongoose.SchemaTypes.ObjectId,
       ref: "Customer"
