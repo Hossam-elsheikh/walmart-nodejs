@@ -59,7 +59,7 @@ let login = async (req ,res)=>{
                 if(isValid){
                     //* generate token
                     // console.log(customer.role);
-                    const token =  jwt.sign({id:customer._id ,email:customer.email , name:customer.name , role:customer.role},process.env.SECRET,{expiresIn:'24h'});
+                    const token =  jwt.sign({id:customer._id ,email:customer.email , name:customer.name , role:customer.role},process.env.SECRET);
                     res.status(200).json({message:"login successfull",data:customer,token});
                 }else{
                     res.status(400).json({message:"password or email is wrong"});
