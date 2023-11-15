@@ -54,4 +54,20 @@ let editRetailerData = async (req,res)=>{
         res.status(500).json({message:err.message})
     }
 }
-module.exports = {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData}
+
+// ? check 
+let check = async(req,res)=>{
+    let {email} = req.body
+        try{
+            let retailer = await RetailerModel.findOne({email: email})
+            if(!retailer){
+                res.status(201).json({message:"retailer Not found",data:false});
+            }else{
+                res.status(201).json({message:"retailer found",data:true});
+            }
+            
+        }catch(err){
+            res.status(400).json({message:err.message});
+        }
+}
+module.exports = {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check}
