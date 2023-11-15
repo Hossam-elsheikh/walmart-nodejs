@@ -126,9 +126,9 @@ let editProduct = async (req, res) => {
     let product = await productModel.updateOne(
       { _id: product_id, retailer_id: retailer_id },
       {
-        title: req.body.title,
-        price: req.body.price,
-        discount: req.body.discount,
+        title: req.body.title ,
+        price: req.body.price ,
+        discountPercentage: req.body.discount ,
       }
     );
     if (!product) {

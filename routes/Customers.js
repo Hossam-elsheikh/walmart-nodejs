@@ -6,7 +6,7 @@ const Router = express.Router();
 // ? get all Customers
 Router.get('/', getAllCustomers);
 
-// ? chack if customer is found
+// ? check if customer is found
 Router.post('/check', check);
 
 // ? signUp customer

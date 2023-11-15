@@ -31,7 +31,6 @@ let RetailersSchema = mongoose.Schema({
     },
     categories:{
         type: Array,
-
     }
 },{timestamps:true})
 
