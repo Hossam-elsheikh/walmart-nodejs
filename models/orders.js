@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 let orderSchema = mongoose.Schema({
     status:{
         type :String,
-        enum:["shipped" , "shipping" ,"Pending"],
+        enum:["delivered" , "shipping" ,"Pending"],
         default : "Pending",
     },
    customer_Id:{

@@ -13,7 +13,6 @@ let paymentForm= async (req,res)=>{
     let role = req.role
     if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
     try{
-
         const paymentIntent = await stripe.paymentIntents.create({
             amount,
             currency: 'usd',
@@ -28,9 +27,7 @@ let paymentForm= async (req,res)=>{
 let getPayment = async (req,res)=>{
     id = req.id;
     role = req.role;
-
     if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
-
     try{
         let payment = await paymentModel.findOne({customer_Id:id})
         console.log(payment);

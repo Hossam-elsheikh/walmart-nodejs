@@ -66,7 +66,8 @@ let getProductById = async (req, res) => {
   }
 };
 
-// ? new product added
+/////////////// retailer 
+// ? new product added by retailer
 let addProduct = async (req, res) => {
   // add product and assign retailer_id to it
   let retailer_id = req.id;

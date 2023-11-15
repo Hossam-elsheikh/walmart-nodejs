@@ -1,37 +1,34 @@
 const customerModel = require("../models/Customers");
 let { orderModel } = require("../models/orders");
+require('dotenv').config();
+const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
 
 let createOrder = async (req, res) => {
-  let order = req.body;
-  order.customer_Id = req.id;
+  const { amount, value, cart } = req.body;
+  let id = req.id;
   let role = req.role;
-  if (role !== "user") {
-    return res.status(401).json({
-      message:
-        "You do not have permission to  create this order. please try again",
-    });
-  }
+  if (role !== "user")
+    return res.status(401).json({ message: "You Are Not A User" });
   try {
-    let customer = await customerModel.findOne({ _id: order.customer_Id });
-    order.cart_Customer = customer.cart;
-
-    let newOrder = await orderModel.create(order);
-    res
-      .status(200)
-      .json({ message: "order created successfully", order: newOrder });
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount,
+      currency: "usd",
+    });
+    await orderModel.create({cart_Customer:cart,customer_Id:id});
+    res.status(200).send(paymentIntent.client_secret);
   } catch (err) {
-    res.status(401).json({ message: err.message });
+    res.status(500).json({ message: err.message });
   }
 };
 
 let getOrderByIdCustomer = async (req, res) => {
   let customerId = req.id;
-
   try {
     let orders = await orderModel.find({ customer_Id: customerId });
     res
       .status(200)
-      .json({ message: `orders for customerId ${customerId}`, orders: orders });
+      .json(orders);
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
@@ -45,13 +42,12 @@ let updateOrder = async (req, res) => {
       { _id: order_id },
       { status: upStatus }
     );
-    
+
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
     }
 
     return res.status(200).json({ message: "Status updated for order", order });
-  
   } catch (err) {
     return res.status(500).json({ message: err.message });
   }
@@ -60,9 +56,9 @@ let updateOrder = async (req, res) => {
 let deleteOrder = async (req, res) => {
   order_id = req.params.id;
   try {
-    let order = await orderModel.findOne({ _id: order_id});
+    let order = await orderModel.findOne({ _id: order_id });
     if (order) {
-      if (order.status !== "shipped") {
+      if (order.status !== "shipping") {
         await orderModel.deleteOne({ _id: order_id });
         res.status(200).json({ message: "Delete order successfully" });
       } else {
