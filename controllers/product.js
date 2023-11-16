@@ -96,6 +96,8 @@ let getRetailerProducts = async (req, res) => {
   // Get all products by this retailer
   let retailer_id = req.id;
   let role = req.role;
+  let name = req.name;
+  let phone = req.phone;
   if (role !== "retailer") {
     res.status(401).json({
       message:
@@ -108,7 +110,7 @@ let getRetailerProducts = async (req, res) => {
   }
   res
     .status(200)
-    .json({ message: "Products successfully retrieved", products: products });
+    .json({ message: "Products successfully retrieved", products: products , name:name , phone });
 };
 
 // ? update product

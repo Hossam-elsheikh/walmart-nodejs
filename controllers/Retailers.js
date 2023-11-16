@@ -38,7 +38,7 @@ let loginRetailer = async (req, res) => {
        return res.status(401).json({message:"wrong email or password"})
     }
 
-    const token = jwt.sign({email:retailer.email,role:retailer.role,id:retailer._id},process.env.SECRET)
+    const token = jwt.sign({email:retailer.email,role:retailer.role,id:retailer._id,name:retailer.name,phone:retailer.phone  },process.env.SECRET)
     res.status(200).json({message:"logged in successfully",token:token})
 }
 

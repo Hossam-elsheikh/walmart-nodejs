@@ -11,6 +11,7 @@ async function auth(req, res, next) {
         req.id = decoded.id;
         req.role = decoded.role;
         req.name = decoded.name;
+        req.phone = decoded.phone || '';
         next();
     }catch(err){
         return res.status(401).json({message:"Please Login First hah!", data:err.message})
