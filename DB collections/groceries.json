@@ -1,0 +1,252 @@
+[
+    
+{
+    "_id": {
+      "$oid": "652f20385e2dbfaefc32a26d"
+    },
+    "id": 21,
+    "title": "- Daal Masoor 500 grams",
+    "description": "Fine quality Branded Product Keep in a cool and dry place",
+    "price": 20,
+    "discountPercentage": 4.81,
+    "rating": 4.44,
+    "stock": 133,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "quantity": 3,
+    "brand": "Saaf & Khaas",
+    "category": "groceries",
+    "thumbnail": "https://i.dummyjson.com/data/products/21/thumbnail.png",
+    "images": [
+      "https://i.dummyjson.com/data/products/21/1.png",
+      "https://i.dummyjson.com/data/products/21/2.jpg",
+      "https://i.dummyjson.com/data/products/21/3.jpg"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "652f204c5e2dbfaefc32a26e"
+    },
+    "id": 22,
+    "title": "Elbow Macaroni - 400 gm",
+    "description": "Product details of Bake Parlor Big Elbow Macaroni - 400 gm",
+    "price": 14,
+    "discountPercentage": 15.58,
+    "rating": 4.57,
+    "stock": 146,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "quantity": 3,
+    "brand": "Bake Parlor Big",
+    "category": "groceries",
+    "thumbnail": "https://i.dummyjson.com/data/products/22/thumbnail.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/22/1.jpg",
+      "https://i.dummyjson.com/data/products/22/2.jpg",
+      "https://i.dummyjson.com/data/products/22/3.jpg"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "652f20605e2dbfaefc32a26f"
+    },
+    "id": 23,
+    "title": "Orange Essence Food Flavou",
+    "description": "Specifications of Orange Essence Food Flavour For Cakes and Baking Food Item",
+    "price": 14,
+    "discountPercentage": 8.04,
+    "rating": 4.85,
+    "stock": 26,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "quantity": 3,
+    "brand": "Baking Food Items",
+    "category": "groceries",
+    "thumbnail": "https://i.dummyjson.com/data/products/23/thumbnail.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/23/1.jpg",
+      "https://i.dummyjson.com/data/products/23/2.jpg",
+      "https://i.dummyjson.com/data/products/23/3.jpg",
+      "https://i.dummyjson.com/data/products/23/4.jpg",
+      "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "652f20765e2dbfaefc32a270"
+    },
+    "id": 24,
+    "title": "cereals muesli fruit nuts",
+    "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+    "price": 46,
+    "discountPercentage": 16.8,
+    "rating": 4.94,
+    "stock": 113,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "quantity": 3,
+    "brand": "fauji",
+    "category": "groceries",
+    "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/24/1.jpg",
+      "https://i.dummyjson.com/data/products/24/2.jpg",
+      "https://i.dummyjson.com/data/products/24/3.jpg",
+      "https://i.dummyjson.com/data/products/24/4.jpg",
+      "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "652f20885e2dbfaefc32a271"
+    },
+    "id": 25,
+    "title": "Gulab Powder 50 Gram",
+    "description": "Dry Rose Flower Powder Gulab Powder 50 Gram • Treats Wounds",
+    "price": 70,
+    "discountPercentage": 13.58,
+    "rating": 4.87,
+    "stock": 47,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "quantity": 3,
+    "brand": "Dry Rose",
+    "category": "groceries",
+    "thumbnail": "https://i.dummyjson.com/data/products/25/thumbnail.jpg",
+    "images": [
+      "https://i.dummyjson.com/data/products/25/1.png",
+      "https://i.dummyjson.com/data/products/25/2.jpg",
+      "https://i.dummyjson.com/data/products/25/3.png",
+      "https://i.dummyjson.com/data/products/25/4.jpg",
+      "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
+    ]
+  },
+  
+{
+    "_id": {
+      "$oid": "65455d8e8bcd57ef6f0db8fc"
+    },
+    "title": "French's Original Crispy Fried Onions, 6 oz Salad Toppings",
+    "description": "French’s® Original Crispy Fried Onions are made with real onions for incredible flavor and that classic crunch. Toss ‘em onto green bean casserole, mashed potatoes, burgers and salads for an exciting pop of crunch and taste the whole family will love.This beloved Thanksgiving staple – hello, Green Bean Casserole – has uses way beyond your holiday meals and holiday sides. Think sprinkled on top of soup or salad, or even as breading for crispy, oven-baked chicken. Feel good about sharing them with everyone – they’re crafted without GMOs or artificial flavor. This French's® Original Crispy Fried Onions is in a Plastic can that is 6 ounces. Store this shelf-stable item at an ambient temperature.",
+    "price": 3.47,
+    "discountPercentage": 12,
+    "rating": 5,
+    "stock": 66,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "brand": "Grocery",
+    "category": "Grocery",
+    "thumbnail": "https://i5.walmartimages.com/seo/French-s-Original-Crispy-Fried-Onions-6-oz-Salad-Toppings_59c41728-756e-4788-a52c-36ceb4ae1713.fc006917b651a06d55480806d20df71f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "images": [
+      "https://i5.walmartimages.com/seo/French-s-Original-Crispy-Fried-Onions-6-oz-Salad-Toppings_59c41728-756e-4788-a52c-36ceb4ae1713.fc006917b651a06d55480806d20df71f.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/0cbf6041-69f1-4476-b34d-97c810a7f784_1.a375a91855af6cfbc6308e911dd7293a.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/fe3a0b86-67c8-4e5f-9c5a-ea7d7124a333_1.82b40d54fadb931ade248ee96ef508fb.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/191774a9-373d-4aa1-8c65-406c929e4e57_1.a50d14ba22b5de4ea3689bc325b0253e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+    ],
+    "quantity": 5,
+    "id": 133
+  },
+  {
+    "_id": {
+      "$oid": "65455e848bcd57ef6f0db8fd"
+    },
+    "title": "Diabetic Friendly Cookies | Sugar Free Linzer Tart Cookies with Strawberry Jam | Italian Cookies | Linzer Tortes | Low Cholesterol & Low Sodium | 9 oz Stern’s Bakery",
+    "description": "Indulge in these bite-size Linzer tart cookies. Treat yourself to these jelly-filled cookies guilt-free. They have low cholesterol and low sodium and they are sugar-free. Try em, Dunk em Twist em these scrumptious Linzer tart cookies are cookies with a dollop of sugar-free strawberry jam in between and sprinkled with powdered sugar for good measure. They are also kosher certified by the OK & CRC and made daily in our all nut-free facility! Try us today and buy us with confidence!",
+    "price": 21.45,
+    "discountPercentage": 12,
+    "rating": 5,
+    "stock": 66,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "brand": "Grocery",
+    "category": "Grocery",
+    "thumbnail": "https://i5.walmartimages.com/seo/Diabetic-Friendly-Cookies-Sugar-Free-Linzer-Tart-Strawberry-Jam-Italian-Tortes-Low-Cholesterol-Sodium-9-oz-Stern-s-Bakery_006f2efc-c6bc-498c-a334-86d4f660ce55.6724b7fa89326c8b5552701a80d2a66d.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "images": [
+      "https://i5.walmartimages.com/seo/Diabetic-Friendly-Cookies-Sugar-Free-Linzer-Tart-Strawberry-Jam-Italian-Tortes-Low-Cholesterol-Sodium-9-oz-Stern-s-Bakery_006f2efc-c6bc-498c-a334-86d4f660ce55.6724b7fa89326c8b5552701a80d2a66d.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/4ba6eee7-eb04-4901-953b-0547595abd98.323b852db3f2e62cd025c0b291f7efa4.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/6617cbca-cf6a-45e0-ad57-eba8bbdc5e65.5355664bf10d18f94493ce3b063d2e53.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+    ],
+    "quantity": 5,
+    "id": 134
+  },
+  {
+    "_id": {
+      "$oid": "65455fad8bcd57ef6f0db8fe"
+    },
+    "title": "Great Value Original Applesauce, 4 oz, 6 Cups",
+    "description": "Enjoy the taste of sweet juicy apples in every delicious bite of our Great Value Original Applesauce. With 0 grams of fat, only 80 calories per serving, and no high fructose corn syrup, our yummy applesauce is an excellent choice for the health-conscious consumer. Every container comes with six individual serving cups that contain 4 ounces of applesauce that are perfect for work or school lunches or a quick and nutritious snack anytime! Applesauce is also a great substitute for high-calorie ingredients in your favorite holiday baking recipe. Cut calories in your culinary creations by using a 1:1 swap ratio for butter or oil to make delightfully moist muffins, crumb cakes, and more! If you want a healthy choice and a sweet treat, give yourself the best of both worlds with Great Value Original Applesauce.",
+    "price": 2.34,
+    "discountPercentage": 12,
+    "rating": 5,
+    "stock": 66,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "brand": "Grocery",
+    "category": "Grocery",
+    "thumbnail": "https://i5.walmartimages.com/seo/Great-Value-Original-Applesauce-4-oz-6-Cups_99e15529-21e9-4c6c-8d1e-04f04b8f253a.8ae3c08fe7bb97b4f3d2e1bcc8efd375.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "images": [
+      "https://i5.walmartimages.com/seo/Great-Value-Original-Applesauce-4-oz-6-Cups_99e15529-21e9-4c6c-8d1e-04f04b8f253a.8ae3c08fe7bb97b4f3d2e1bcc8efd375.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/b6a00e99-d7ab-4cc7-ab42-5798dae272e4.f1fd2e422b1ded3a20077584c315cbe4.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/fe46af93-751f-4e13-92fa-b7f26c566bf0.5b13082a01908deb5ae0bab9b48b0e5e.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/d6ffeb02-9f11-4764-a948-fd657ec8af21.aab0666c3cf62b2382d88af20915fc46.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+    ],
+    "quantity": 5,
+    "id": 135
+  },
+  {
+    "_id": {
+      "$oid": "654560cb8bcd57ef6f0db8ff"
+    },
+    "title": "Great Value Golden Sweet Whole Kernel Corn, Canned Corn, 15 oz Can",
+    "description": "Eating your veggies just got easier with Great Value Whole Kernel Corn. Whether you want to make a vegetable soup, vegetable casserole, or your very own homemade recipe, Great Value Whole Kernel Corn has you covered. With no added chemicals or sugars, Great Value Whole Kernel Corn is picked and packed in the same day, ensuring farm-fresh flavors perfect for delicious, easy, and quick dinner ideas. Great Value Whole Kernel Corn is not only fast and easy to prepare but sure to satisfy. Ready in minutes, all you have to do is warm in a saucepan on the stove or heat in a microwave-safe dish in the microwave.",
+    "price": 0.7,
+    "discountPercentage": 12,
+    "rating": 5,
+    "stock": 66,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "brand": "Grocery",
+    "category": "Grocery",
+    "thumbnail": "https://i5.walmartimages.com/seo/Great-Value-Golden-Sweet-Whole-Kernel-Corn-Canned-Corn-15-oz-Can_f10b66a7-2551-4b79-9371-63a7a04251eb.3b7842999d659f6aedbcb4bddfa78233.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+    "images": [
+      "https://i5.walmartimages.com/seo/Great-Value-Golden-Sweet-Whole-Kernel-Corn-Canned-Corn-15-oz-Can_f10b66a7-2551-4b79-9371-63a7a04251eb.3b7842999d659f6aedbcb4bddfa78233.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/ecc9da37-8233-4059-92a2-052a48b72001.171d223db090699179740b48fca9f506.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/973d7994-8067-458c-b46c-9fc6ad131a2d.0bebbd5462a51b6fb4e8e767cab9fb2a.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/2b08c4f8-c7ad-46f7-aa75-12cf265e7f8d.0e21c1dbef13df5b726e01687dc96562.png?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+    ],
+    "quantity": 5,
+    "id": 136
+  },
+  {
+    "_id": {
+      "$oid": "654562468bcd57ef6f0db900"
+    },
+    "title": "Great Value Golden Sweet Whole Kernel Corn, 8.75 oz Can",
+    "description": "Take your culinary creations to the next level with Great Value Golden Sweet Whole Kernel Corn. This incredibly versatile vegetable is an excellent accompaniment to a variety of dishes including yummy tacos, burritos, relish, salsa, chowder, and more! It also makes a simple, quick, and easy side dish for your well-rounded meal that all will enjoy. Our Great Value Golden Sweet Whole Kernel Corn has earned our esteemed Good For You label, which means it has met rigorous nutrition criteria informed by the latest nutrition science and authoritative guidance from the 2010 Dietary Guidelines for Americans, U.S. Food and Drug Administration (FDA), U.S. Department of Agriculture (USDA), and Institute of Medicine (IOM). Get creative in the kitchen and enjoy the incredible taste of Great Value Golden Sweet Whole Kernel Corn in your next recipe.",
+    "price": 0.64,
+    "discountPercentage": 12,
+    "rating": 5,
+    "stock": 66,
+    "retailer_id": {
+      "$oid": "6516e4c047159d92ba137d7c"
+    },
+    "brand": "Grocery",
+    "category": "Grocery",
+    "thumbnail": "https://i5.walmartimages.com/seo/Great-Value-Golden-Sweet-Whole-Kernel-Corn-8-75-oz-Can_49d1f684-6786-46d8-b536-f174801cc17c.5fc12d671a32016ff87d10515ffb8bef.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF",
+    "images": [
+      "https://i5.walmartimages.com/seo/Great-Value-Golden-Sweet-Whole-Kernel-Corn-8-75-oz-Can_49d1f684-6786-46d8-b536-f174801cc17c.5fc12d671a32016ff87d10515ffb8bef.jpeg?odnHeight=640&odnWidth=640&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/316346be-62aa-41f3-a32c-77517685c644.5d759dd129ad0631c8a1258af6293064.jpeg?odnHeight=117&odnWidth=117&odnBg=FFFFFF"
+    ],
+    "quantity": 5,
+    "id": 137
+  }
+]
