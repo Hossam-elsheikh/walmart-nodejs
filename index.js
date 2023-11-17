@@ -9,6 +9,7 @@ let productRoute = require('./routes/product.js')
 let cartRoute = require('./routes/cart.js')
 let orderRoute = require('./routes/orders.js')
 let paymentRoute = require('./routes/payment.js')
+let categoryRoute = require('./routes/category.js')
 let wishListRoute = require('./routes/wishList.js')
 // ? ==> Creating app <==
 const app = express();
@@ -24,6 +25,7 @@ app.use(cors({
 app.use('/customer',customerRoute);
 app.use('/retailer',retailerRoute);
 app.use('/product',productRoute);
+app.use('/category',categoryRoute);
 app.use('/customer/cart',cartRoute);
 app.use('/customer/wishList',wishListRoute);
 app.use('/customer/order',orderRoute);

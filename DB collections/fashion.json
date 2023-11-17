@@ -1,12 +1,11 @@
 [
     
 {
-    "_id": {
-      "$oid": "652f21ba5e2dbfaefc32a27c"
-    },
-    "id": 36,
+   
     "title": "Sleeve Shirt Womens",
+    "ar_title": "قميص طويل الأكمام للنساء",
     "description": "Cotton Solid Color Professional Wear Sleeve Shirt Womens Work Blouses Wholesale Clothing Casual Plain Custom Top OEM Customized",
+    "ar_description": "قميص قطني بلون سادة بأكمام طويلة، بلوزات عمل نسائية، ملابس بالجملة، ملابس عادية عادية مخصصة، OEM حسب الطلب",
     "price": 90,
     "discountPercentage": 10.89,
     "rating": 4.26,
@@ -16,7 +15,7 @@
     },
     "quantity": 3,
     "brand": "Professional Wear",
-    "category": "tops",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/36/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/36/1.jpg",
