@@ -9,7 +9,7 @@ let getAllCustomers =async (req,res)=>{
 try{
     let customers = await customerModel.find();
     console.log(customers);
-    res.status(200).json({customers});
+    res.status(200).json(customers);
 }catch(err){
     res.status(500).json("Something Went Wrong..! );");
 }

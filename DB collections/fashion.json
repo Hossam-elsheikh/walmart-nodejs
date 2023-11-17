@@ -1,5 +1,4 @@
 [
-    
 {
    
     "title": "Sleeve Shirt Womens",
@@ -26,9 +25,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f21ec5e2dbfaefc32a27d"
-    },
     "id": 37,
     "title": "ank Tops for Womens/Girls",
     "description": "PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS",
@@ -41,7 +37,7 @@
     },
     "quantity": 3,
     "brand": "Soft Cotton",
-    "category": "tops",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/37/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/37/1.jpg",
@@ -52,9 +48,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f21ff5e2dbfaefc32a27e"
-    },
     "id": 38,
     "title": "sublimation plain kids tank",
     "description": "sublimation plain kids tank tops wholesale",
@@ -67,7 +60,7 @@
     },
     "quantity": 3,
     "brand": "Soft Cotton",
-    "category": "tops",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/38/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/38/1.png",
@@ -77,9 +70,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22115e2dbfaefc32a27f"
-    },
     "id": 39,
     "title": "Women Sweaters Wool",
     "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
@@ -92,7 +82,7 @@
     },
     "quantity": 3,
     "brand": "Top Sweater",
-    "category": "tops",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/39/1.jpg",
@@ -103,9 +93,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f222d5e2dbfaefc32a280"
-    },
     "id": 40,
     "title": "women winter clothes",
     "description": "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
@@ -118,7 +105,7 @@
     },
     "quantity": 3,
     "brand": "Top Sweater",
-    "category": "tops",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/40/1.jpg",
@@ -126,9 +113,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22405e2dbfaefc32a281"
-    },
     "id": 41,
     "title": "NIGHT SUIT",
     "description": "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
@@ -152,9 +136,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22505e2dbfaefc32a282"
-    },
     "id": 42,
     "title": "Stiched Kurta plus trouser",
     "description": "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
@@ -178,9 +159,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22615e2dbfaefc32a283"
-    },
     "id": 43,
     "title": "frock gold printed",
     "description": "Ghazi fabric long frock gold printed ready to wear stitched collection (G992)",
@@ -204,9 +182,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22755e2dbfaefc32a284"
-    },
     "id": 44,
     "title": "Ladies Multicolored Dress",
     "description": "This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.",
@@ -230,9 +205,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f229c5e2dbfaefc32a286"
-    },
     "id": 46,
     "title": "women's shoes",
     "description": "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
@@ -256,9 +228,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22ae5e2dbfaefc32a287"
-    },
     "id": 47,
     "title": "Sneaker shoes",
     "description": "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
@@ -281,9 +250,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22e55e2dbfaefc32a28a"
-    },
     "id": 50,
     "title": "Women Shoes",
     "description": "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
@@ -305,9 +271,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f22f65e2dbfaefc32a28b"
-    },
     "id": 51,
     "title": "half sleeves T shirts",
     "description": "Many store is creating new designs and trend every month and every year. Daraz.pk have a beautiful range of men fashion brands",
@@ -330,9 +293,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f230e5e2dbfaefc32a28c"
-    },
     "id": 52,
     "title": "FREE FIRE T Shirt",
     "description": "quality and professional print - It doesn't just look high quality, it is high quality.",
@@ -356,9 +316,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f231e5e2dbfaefc32a28d"
-    },
     "id": 53,
     "title": "printed high quality T shirts",
     "description": "Brand: vintage Apparel ,Export quality",
@@ -382,9 +339,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f232f5e2dbfaefc32a28e"
-    },
     "id": 54,
     "title": "Pubg Printed Graphic T-Shirt",
     "description": "Product Description Features: 100% Ultra soft Polyester Jersey. Vibrant & colorful printing on front. Feels soft as cotton without ever cracking",
@@ -408,9 +362,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f233f5e2dbfaefc32a28f"
-    },
     "id": 55,
     "title": "Money Heist Printed Summer T Shirts",
     "description": "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
@@ -434,9 +385,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23565e2dbfaefc32a290"
-    },
     "id": 56,
     "title": "Sneakers Joggers Shoes",
     "description": "Gender: Men , Colors: Same as DisplayedCondition: 100% Brand New",
@@ -461,9 +409,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23695e2dbfaefc32a291"
-    },
     "id": 57,
     "title": "Loafers for men",
     "description": "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
@@ -487,9 +432,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23925e2dbfaefc32a292"
-    },
     "id": 58,
     "title": "formal offices shoes",
     "description": "Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber",
@@ -513,9 +455,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23a35e2dbfaefc32a293"
-    },
     "id": 59,
     "title": "Spring and summershoes",
     "description": "Comfortable stretch cloth, lightweight body; ,rubber sole, anti-skid wear;",
@@ -539,9 +478,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23b45e2dbfaefc32a294"
-    },
     "id": 60,
     "title": "Stylish Casual Jeans Shoes",
     "description": "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
@@ -564,9 +500,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23c35e2dbfaefc32a295"
-    },
     "id": 61,
     "title": "Leather Straps Wristwatch",
     "description": "Style:Sport ,Clasp:Buckles ,Water Resistance Depth:3Bar",
@@ -588,9 +521,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23d35e2dbfaefc32a296"
-    },
     "id": 62,
     "title": "Waterproof Leather Brand Watch",
     "description": "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
@@ -611,9 +541,6 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23ea5e2dbfaefc32a297"
-    },
     "id": 63,
     "title": "Royal Blue Premium Watch",
     "description": "Men Silver Chain Royal Blue Premium Watch Latest Analog Watch",
@@ -636,9 +563,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f23fd5e2dbfaefc32a298"
-    },
+   
     "id": 64,
     "title": "Leather Strap Skeleton Watch",
     "description": "Leather Strap Skeleton Watch for Men - Stylish and Latest Design",
@@ -661,9 +586,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24165e2dbfaefc32a299"
-    },
+    
     "id": 65,
     "title": "Stainless Steel Wrist Watch",
     "description": "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
@@ -687,9 +610,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f242c5e2dbfaefc32a29a"
-    },
+    
     "id": 66,
     "title": "Steel Analog Couple Watches",
     "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
@@ -713,9 +634,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f243d5e2dbfaefc32a29b"
-    },
+    
     "id": 67,
     "title": "Fashion Magnetic Wrist Watch",
     "description": "Buy this awesome  The product is originally manufactured by the company and it's a top selling product with a very reasonable",
@@ -739,9 +658,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f244d5e2dbfaefc32a29c"
-    },
+    
     "id": 68,
     "title": "Stylish Luxury Digital Watch",
     "description": "Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls",
@@ -762,9 +679,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24625e2dbfaefc32a29d"
-    },
+    
     "id": 69,
     "title": "Golden Watch Pearls Bracelet Watch",
     "description": "Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women",
@@ -788,9 +703,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24755e2dbfaefc32a29e"
-    },
+    
     "id": 70,
     "title": "Stainless Steel Women",
     "description": "Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies",
@@ -812,9 +725,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24885e2dbfaefc32a29f"
-    },
+    
     "id": 71,
     "title": "Women Shoulder Bags",
     "description": "LouisWill Women Shoulder Bags Long Clutches Cross Body Bags Phone Bags PU Leather Hand Bags Large Capacity Card Holders Zipper Coin Purses Fashion Crossbody Bags for Girls Ladies",
@@ -837,9 +748,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f249b5e2dbfaefc32a2a0"
-    },
+    
     "id": 72,
     "title": "Handbag For Girls",
     "description": "This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.",
@@ -863,9 +772,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24af5e2dbfaefc32a2a1"
-    },
+    
     "id": 73,
     "title": "Fancy hand clutch",
     "description": "This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.",
@@ -888,9 +795,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24c65e2dbfaefc32a2a2"
-    },
+    
     "id": 74,
     "title": "Leather Hand Bag",
     "description": "It features an attractive design that makes it a must have accessory in your collection. We sell different kind of bags for boys, kids, women, girls and also for unisex.",
@@ -914,9 +819,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24dc5e2dbfaefc32a2a3"
-    },
+    
     "id": 75,
     "title": "Seven Pocket Women Bag",
     "description": "Seven Pocket Women Bag Handbags Lady Shoulder Crossbody Bag Female Purse Seven Pocket Bag",
@@ -939,9 +842,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f24ff5e2dbfaefc32a2a5"
-    },
+    
     "id": 77,
     "title": "Rose Ring",
     "description": "Brand: The Greetings Flower Colour: RedRing Colour: GoldenSize: Adjustable",
@@ -964,9 +865,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f25155e2dbfaefc32a2a6"
-    },
+    
     "id": 78,
     "title": "Rhinestone Korean Style Open Rings",
     "description": "Fashion Jewellery 3Pcs Adjustable Pearl Rhinestone Korean Style Open Rings For Women",
@@ -986,9 +885,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f252f5e2dbfaefc32a2a7"
-    },
+    
     "id": 79,
     "title": "Elegant Female Pearl Earrings",
     "description": "Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set",
@@ -1008,9 +905,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f25435e2dbfaefc32a2a8"
-    },
+    
     "id": 80,
     "title": "Chain Pin Tassel Earrings",
     "description": "Pair Of Ear Cuff Butterfly Long Chain Pin Tassel Earrings - Silver ( Long Life Quality Product)",
@@ -1034,9 +929,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f25765e2dbfaefc32a2a9"
-    },
+    
     "id": 81,
     "title": "Round Silver Frame Sun Glasses",
     "description": "A pair of sunglasses can protect your eyes from being hurt. For car driving, vacation travel, outdoor activities, social gatherings,",
@@ -1060,9 +953,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f258c5e2dbfaefc32a2aa"
-    },
+    
     "id": 82,
     "title": "Kabir Singh Square Sunglass",
     "description": "Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass",
@@ -1086,9 +977,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f259f5e2dbfaefc32a2ab"
-    },
+   
     "id": 83,
     "title": "Wiley X Night Vision Yellow Glasses",
     "description": "Wiley X Night Vision Yellow Glasses for Riders - Night Vision Anti Fog Driving Glasses - Free Night Glass Cover - Shield Eyes From Dust and Virus- For Night Sport Matches",
@@ -1112,9 +1001,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f25b45e2dbfaefc32a2ac"
-    },
+    
     "id": 84,
     "title": "Square Sunglasses",
     "description": "Fashion Oversized Square Sunglasses Retro Gradient Big Frame Sunglasses For Women One Piece Gafas Shade Mirror Clear Lens 17059",
@@ -1136,9 +1023,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "652f263f5e2dbfaefc32a2ad"
-    },
+    
     "id": 85,
     "title": "LouisWill Men Sunglasses",
     "description": "LouisWill Men Sunglasses Polarized Sunglasses UV400 Sunglasses Day Night Dual Use Safety Driving Night Vision Eyewear AL-MG Frame Sun Glasses with Free Box for Drivers",
@@ -1160,9 +1045,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65310be74c3526f60e2b8d5d"
-    },
+    
     "id": 101,
     "title": "Woman Shawl",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1185,9 +1068,7 @@
     "quantity": 94
   },
   {
-    "_id": {
-      "$oid": "65310dbd4c3526f60e2b8d5e"
-    },
+    
     "id": 102,
     "title": "Women Shawl",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1209,9 +1090,7 @@
     "quantity": 94
   },
   {
-    "_id": {
-      "$oid": "65310f624c3526f60e2b8d5f"
-    },
+    
     "id": 103,
     "title": "Woman Shawl",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1233,9 +1112,7 @@
     "quantity": 250
   },
   {
-    "_id": {
-      "$oid": "653110b24c3526f60e2b8d60"
-    },
+    
     "id": 104,
     "title": "Woman Shawl",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1257,9 +1134,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "653113fa4c3526f60e2b8d61"
-    },
+    
     "id": 105,
     "title": "Woman Shawl",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1282,9 +1157,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "6531151f4c3526f60e2b8d62"
-    },
+    
     "id": 106,
     "title": "Woman Standart Fit Knitted Cardigan",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
@@ -1307,9 +1180,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "653117a44c3526f60e2b8d63"
-    },
+    
     "id": 107,
     "title": "Logo T-Shirt Green",
     "description": "Soft and comfortable cotton fabric\nCrew neck and short sleeves\nComfortable, regular fit\nWash according to care label instructions",
@@ -1332,9 +1203,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "653118d74c3526f60e2b8d64"
-    },
+    
     "id": 108,
     "title": "Orca Leather Boots Anthracite",
     "description": "Genuine and smooth leather upper\nSecure lace-ups with side zipper closure\nSlightly cushioned footbed provides comfort\nPatterned chunky outsole provides traction and grip",
@@ -1356,9 +1225,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65311a1f4c3526f60e2b8d65"
-    },
+    
     "id": 109,
     "title": "Softride Enzo NXT CASTLEROCK-High Risk R",
     "description": "Sole Material\tRubber\nColour Name\tRED\nDepartment\tMen",
@@ -1381,9 +1248,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65311af74c3526f60e2b8d66"
-    },
+    
     "id": 110,
     "title": "ESS Big Logo Hoodie TR Puma Black",
     "description": "Material\tCombination\nColour Name\tblack\nDepartment\tMen",
@@ -1406,9 +1271,7 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "65311d0f4c3526f60e2b8d67"
-    },
+    
     "id": 111,
     "title": "slim-fit-long-sleeve-dobby-men's-shirt",
     "description": "Material\tCotton Blend\nColour Name\tBLUE\nDepartment\tMen\nMaterial Composition\tMAIN FABRIC: 64% Cotton 36% Polyester\nItem Pack Quantity\tSingle\nPack Size\tSingle\nModel Number\tW21770Z8-S7N-823090\nModel Name\tW21770Z8-S7N-823090",
