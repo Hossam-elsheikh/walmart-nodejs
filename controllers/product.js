@@ -74,7 +74,6 @@ let addProduct = async (req, res) => {
   let product = req.body;
   product.retailer_id = retailer_id;
   let role = req.role;
-  console.log(role);
   if (role !== "retailer") {
     return res.status(401).json({
       message:

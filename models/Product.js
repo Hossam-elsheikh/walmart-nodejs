@@ -23,9 +23,6 @@ let ProductSchema = mongoose.Schema({
         type: Number,
         default:1
     },
-    discount:{
-        type: Number,
-    },
     stock:{
         type : Number,
         default: 300
