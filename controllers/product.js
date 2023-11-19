@@ -1,6 +1,5 @@
 let productModel = require("../models/Product");
 let customerModel = require("../models/Customers");
-
 let getAllProducts = async (req, res) => {
   try {
     let products = await productModel.find({});
