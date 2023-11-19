@@ -48,7 +48,6 @@ let getOrderByRetailerID = async (req, res)=>{
           }
         })
     })
-    console.log(orders);
     res
       .status(200)
       .json(orders);
@@ -58,12 +57,22 @@ let getOrderByRetailerID = async (req, res)=>{
 }
 let updateOrder = async (req, res) => {
   order_id = req.params.id;
+  product_id = req.body.productID;
   let upStatus = req.body.status;
   try {
-    let order = await orderModel.updateOne(
-      { _id: order_id },
-      { status: upStatus }
+    let order = await orderModel.findOne(
+      { _id: order_id }
     );
+    let newCart = [...order.cart_Customer]
+    newCart.forEach((item)=>{
+      if(item.id == product_id){
+        item.status = upStatus
+        console.log(item);
+      }
+    }
+    )
+    await orderModel.updateOne({_id: order_id}, {$set : {cart_Customer: newCart}})
+    // console.log(order.cart_Customer);
 
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
