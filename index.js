@@ -5,6 +5,7 @@ require('dotenv').config();
 const stripe =require('stripe')(process.env.STRIPE_SECRET_KEY);
 let customerRoute = require ('./routes/Customers.js')
 let retailerRoute = require('./routes/Retailers.js')
+let adminRoute = require('./routes/Admins.js')
 let productRoute = require('./routes/product.js')
 let cartRoute = require('./routes/cart.js')
 let orderRoute = require('./routes/orders.js')
@@ -24,6 +25,7 @@ app.use(cors({
 // !-----------------------------------------------------------------------
 app.use('/customer',customerRoute);
 app.use('/retailer',retailerRoute);
+app.use('/admin',adminRoute);
 app.use('/product',productRoute);
 app.use('/category',categoryRoute);
 app.use('/customer/cart',cartRoute);
