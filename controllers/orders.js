@@ -34,6 +34,28 @@ let getOrderByIdCustomer = async (req, res) => {
   }
 };
 
+// for seller 
+let getOrderByRetailerID = async (req, res)=>{
+  let retailerID = req.id;
+  try {
+    let allOrders = await orderModel.find();
+    let orders=[]
+    
+    allOrders.forEach((order)=> {
+        order.cart_Customer.forEach((item)=>{
+          if (item.retailer_id == retailerID){
+            orders.push({...item,customerID: order.customer_Id,orderID: order._id})
+          }
+        })
+    })
+    console.log(orders);
+    res
+      .status(200)
+      .json(orders);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+}
 let updateOrder = async (req, res) => {
   order_id = req.params.id;
   let upStatus = req.body.status;
@@ -79,4 +101,5 @@ module.exports = {
   getOrderByIdCustomer,
   deleteOrder,
   updateOrder,
+  getOrderByRetailerID
 };
