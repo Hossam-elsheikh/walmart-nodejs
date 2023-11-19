@@ -27,7 +27,9 @@
   {
     "id": 37,
     "title": "ank Tops for Womens/Girls",
+    "ar_title":"قمم الكاحل للنساء/الفتيات",
     "description": "PACK OF 3 CAMISOLES ,VERY COMFORTABLE SOFT COTTON STUFF, COMFORTABLE IN ALL FOUR SEASONS",
+    "ar_description":"بوة مكونة من 3 قمصان، حشوة قطنية ناعمة ومريحة جدًا، مريحة في جميع المواسم الأربعة",
     "price": 50,
     "discountPercentage": 12.05,
     "rating": 4.52,
@@ -50,7 +52,9 @@
   {
     "id": 38,
     "title": "sublimation plain kids tank",
+    "ar_title":"التسامي خزان الاطفال عادي",
     "description": "sublimation plain kids tank tops wholesale",
+    "ar_description":"التسامي عادي الاطفال تانك القمم بالجملة",
     "price": 100,
     "discountPercentage": 11.12,
     "rating": 4.8,
@@ -72,7 +76,9 @@
   {
     "id": 39,
     "title": "Women Sweaters Wool",
-    "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
+    "ar_title":"كنزات صوف نسائية",
+    "description":"2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
+    "ar_description":"2021 مخصص الشتاء الخريف زيبرا متماسكة المحاصيل الأعلى المرأة البلوزات الصوف الموهير كوس تخصيص طاقم الرقبة المرأة المحاصيل الأعلى سترة",
     "price": 600,
     "discountPercentage": 17.2,
     "rating": 4.55,
@@ -95,7 +101,9 @@
   {
     "id": 40,
     "title": "women winter clothes",
+    "ar_title":"ملابس الشتاء النسائية",
     "description": "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
+    "ar_description":"ملابس شتوية للنساء، سترة بغطاء للرأس من الصوف السميك مع بنطلون رياضي للسيدات، طقم سراويل رياضية مكون من قطعتين",
     "price": 57,
     "discountPercentage": 13.39,
     "rating": 4.91,
@@ -115,7 +123,9 @@
   {
     "id": 41,
     "title": "NIGHT SUIT",
+    "ar_title":"بدلة مسائية",
     "description": "NIGHT SUIT RED MICKY MOUSE..  For Girls. Fantastic Suits.",
+    "ar_description":"بدلة نوم ميكي ماوس حمراء.. للبنات. بدلات رائعة",
     "price": 55,
     "discountPercentage": 15.05,
     "rating": 4.65,
@@ -125,7 +135,7 @@
     },
     "quantity": 3,
     "brand": "RED MICKY MOUSE..",
-    "category": "womens-dresses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/41/thumbnail.webp",
     "images": [
       "https://i.dummyjson.com/data/products/41/1.jpg",
@@ -138,7 +148,9 @@
   {
     "id": 42,
     "title": "Stiched Kurta plus trouser",
+    "ar_title":"كورتا مخيطة بالإضافة إلى بنطلون",
     "description": "FABRIC: LILEIN CHEST: 21 LENGHT: 37 TROUSER: (38) :ARABIC LILEIN",
+    "ar_description":"القماش: ليلين الصدر: 21 الطول: 37 البنطال: (38) : ليلين عربي",
     "price": 80,
     "discountPercentage": 15.37,
     "rating": 4.05,
@@ -148,7 +160,7 @@
     },
     "quantity": 3,
     "brand": "Digital Printed",
-    "category": "womens-dresses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/42/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/42/1.png",
@@ -161,7 +173,9 @@
   {
     "id": 43,
     "title": "frock gold printed",
+    "ar_title":"فستان ذهبي مطبوع",
     "description": "Ghazi fabric long frock gold printed ready to wear stitched collection (G992)",
+    "ar_description":"فستان غازي طويل قماش غازي مطبوع ذهبي جاهز للارتداء مجموعة مخيطة (G992)",
     "price": 600,
     "discountPercentage": 15.55,
     "rating": 4.31,
@@ -171,7 +185,7 @@
     },
     "quantity": 3,
     "brand": "Ghazi Fabric",
-    "category": "womens-dresses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/43/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/43/1.jpg",
@@ -184,7 +198,9 @@
   {
     "id": 44,
     "title": "Ladies Multicolored Dress",
+    "ar_title":"فستان نسائي متعدد الألوان",
     "description": "This classy shirt for women gives you a gorgeous look on everyday wear and specially for semi-casual wears.",
+    "ar_description":"يمنحك هذا القميص الأنيق للنساء مظهرًا رائعًا للارتداء اليومي وخاصة للملابس شبه غير الرسمية",
     "price": 79,
     "discountPercentage": 16.88,
     "rating": 4.03,
@@ -194,7 +210,7 @@
     },
     "quantity": 3,
     "brand": "Ghazi Fabric",
-    "category": "womens-dresses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/44/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/44/1.jpg",
@@ -207,7 +223,9 @@
   {
     "id": 46,
     "title": "women's shoes",
+    "ar_title":"أحذية المرأة",
     "description": "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
+    "ar_description":"الإغلاق: دانتيل، الطراز مع الجزء السفلي: زيادة في الداخل، مادة النعل: مطاط",
     "price": 40,
     "discountPercentage": 16.96,
     "rating": 4.14,
@@ -217,7 +235,7 @@
     },
     "quantity": 3,
     "brand": "IELGY fashion",
-    "category": "womens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/46/1.webp",
@@ -230,7 +248,9 @@
   {
     "id": 47,
     "title": "Sneaker shoes",
+    "ar_title":"أحذية رياضية",
     "description": "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
+    "ar_description":"أحذية رياضية كاجوال من الجلد الصناعي للنساء/البنات أحذية رياضية للنساء",
     "price": 120,
     "discountPercentage": 10.37,
     "rating": 4.19,
@@ -240,7 +260,7 @@
     },
     "quantity": 3,
     "brand": "Synthetic Leather",
-    "category": "womens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/47/thumbnail.jpeg",
     "images": [
       "https://i.dummyjson.com/data/products/47/1.jpg",
@@ -252,7 +272,9 @@
   {
     "id": 50,
     "title": "Women Shoes",
+    "ar_title":"احذية نسائية",
     "description": "2020 New Arrivals Genuine Leather Fashion Trend Platform Summer Women Shoes",
+    "ar_description":"وصل حديثاً لعام 2020 أحذية نسائية صيفية ذات نعل سميك من الجلد الطبيعي",
     "price": 36,
     "discountPercentage": 16.87,
     "rating": 4.33,
@@ -262,7 +284,7 @@
     },
     "quantity": 3,
     "brand": "Arrivals Genuine",
-    "category": "womens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/50/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/50/1.jpeg",
@@ -273,7 +295,9 @@
   {
     "id": 51,
     "title": "half sleeves T shirts",
+    "ar_title":"قمصان نصف كم",
     "description": "Many store is creating new designs and trend every month and every year. Daraz.pk have a beautiful range of men fashion brands",
+    "ar_description":"تبتكر العديد من المتاجر تصميمات واتجاهات جديدة كل شهر وكل عام. لدى Daraz.pk مجموعة جميلة من ماركات الأزياء الرجالية",
     "price": 23,
     "discountPercentage": 12.76,
     "rating": 4.26,
@@ -283,7 +307,7 @@
     },
     "quantity": 3,
     "brand": "Vintage Apparel",
-    "category": "mens-shirts",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/51/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/51/1.png",
@@ -295,7 +319,9 @@
   {
     "id": 52,
     "title": "FREE FIRE T Shirt",
+    "ar_title":"تي شيرت فري فاير",
     "description": "quality and professional print - It doesn't just look high quality, it is high quality.",
+    "ar_description":"طباعة عالية الجودة واحترافية - إنها لا تبدو ذات جودة عالية فحسب، بل إنها ذات جودة عالية",
     "price": 10,
     "discountPercentage": 14.72,
     "rating": 4.52,
@@ -305,7 +331,7 @@
     },
     "quantity": 3,
     "brand": "FREE FIRE",
-    "category": "mens-shirts",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/52/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/52/1.png",
@@ -318,7 +344,9 @@
   {
     "id": 53,
     "title": "printed high quality T shirts",
+    "ar_title":"طباعة تيشيرتات عالية الجودة",
     "description": "Brand: vintage Apparel ,Export quality",
+    "ar_description":"العلامة التجارية: ملابس عتيقة، جودة التصدير",
     "price": 35,
     "discountPercentage": 7.54,
     "rating": 4.89,
@@ -328,7 +356,7 @@
     },
     "quantity": 3,
     "brand": "Vintage Apparel",
-    "category": "mens-shirts",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/53/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/53/1.webp",
@@ -341,7 +369,9 @@
   {
     "id": 54,
     "title": "Pubg Printed Graphic T-Shirt",
+    "ar_title":"تي شيرت برسومات مطبوعة للعبة Pubg",
     "description": "Product Description Features: 100% Ultra soft Polyester Jersey. Vibrant & colorful printing on front. Feels soft as cotton without ever cracking",
+    "ar_description":"وصف المنتج الميزات: 100% بوليستر جيرسي فائق النعومة. طباعة نابضة بالحياة وملونة على الجهة الأمامية. ملمس ناعم كالقطن دون أن يتشقق على الإطلاق",
     "price": 46,
     "discountPercentage": 16.44,
     "rating": 4.62,
@@ -351,7 +381,7 @@
     },
     "quantity": 3,
     "brand": "The Warehouse",
-    "category": "mens-shirts",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/54/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/54/1.jpg",
@@ -364,7 +394,9 @@
   {
     "id": 55,
     "title": "Money Heist Printed Summer T Shirts",
+    "ar_title":"تي شيرت صيفي مطبوع عليه سرقة الأموال",
     "description": "Fabric Jercy, Size: M & L Wear Stylish Dual Stiched",
+    "ar_description":"قماش جيرسي، المقاس: ملابس M & L أنيقة بخياطة مزدوجة",
     "price": 66,
     "discountPercentage": 15.97,
     "rating": 4.9,
@@ -374,7 +406,7 @@
     },
     "quantity": 3,
     "brand": "The Warehouse",
-    "category": "mens-shirts",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/55/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/55/1.jpg",
@@ -387,7 +419,9 @@
   {
     "id": 56,
     "title": "Sneakers Joggers Shoes",
+    "ar_title":"أحذية رياضية للركض",
     "description": "Gender: Men , Colors: Same as DisplayedCondition: 100% Brand New",
+    "ar_description":"الجنس: رجال، الألوان: نفس المعروض، الحالة: 100% جديد تمامًا",
     "price": 40,
     "discountPercentage": 12.57,
     "rating": 4.38,
@@ -397,7 +431,7 @@
     },
     "quantity": 3,
     "brand": "Sneakers",
-    "category": "mens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/56/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/56/1.jpg",
@@ -411,7 +445,9 @@
   {
     "id": 57,
     "title": "Loafers for men",
+    "ar_title":"المتسكعون للرجال",
     "description": "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
+    "ar_description":"أحذية رجالية - أحذية لوفر للرجال - أحذية مطاطية - أحذية نايلون - أحذية للرجال - موكاسين - نايلون خالص (مطاط) بجودة عالية",
     "price": 47,
     "discountPercentage": 10.91,
     "rating": 4.91,
@@ -421,7 +457,7 @@
     },
     "quantity": 3,
     "brand": "Rubber",
-    "category": "mens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/57/1.jpg",
@@ -434,7 +470,9 @@
   {
     "id": 58,
     "title": "formal offices shoes",
+    "ar_title":"أحذية المكاتب الرسمية",
     "description": "Pattern Type: Solid, Material: PU, Toe Shape: Pointed Toe ,Outsole Material: Rubber",
+    "ar_description":"نوع النقش: صلب، المادة: PU، شكل إصبع القدم: مقدمة مدببة، مادة النعل الخارجي: مطاط",
     "price": 57,
     "discountPercentage": 12,
     "rating": 4.41,
@@ -444,7 +482,7 @@
     },
     "quantity": 3,
     "brand": "The Warehouse",
-    "category": "mens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/58/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/58/1.jpg",
@@ -457,7 +495,9 @@
   {
     "id": 59,
     "title": "Spring and summershoes",
+    "ar_title":"أحذية الربيع والصيف",
     "description": "Comfortable stretch cloth, lightweight body; ,rubber sole, anti-skid wear;",
+    "ar_description":"قماش مطاطي مريح، جسم خفيف الوزن، نعل مطاطي، مضاد للانزلاق",
     "price": 20,
     "discountPercentage": 8.71,
     "rating": 4.33,
@@ -467,7 +507,7 @@
     },
     "quantity": 3,
     "brand": "Sneakers",
-    "category": "mens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/59/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/59/1.jpg",
@@ -480,7 +520,9 @@
   {
     "id": 60,
     "title": "Stylish Casual Jeans Shoes",
+    "ar_title":"أحذية جينز كاجوال أنيقة",
     "description": "High Quality ,Stylish design ,Comfortable wear ,FAshion ,Durable",
+    "ar_description":"جودة عالية، تصميم أنيق، ملابس مريحة، موضة، متينة",
     "price": 58,
     "discountPercentage": 7.55,
     "rating": 4.55,
@@ -490,7 +532,7 @@
     },
     "quantity": 3,
     "brand": "Sneakers",
-    "category": "mens-shoes",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/60/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/60/1.jpg",
@@ -502,7 +544,9 @@
   {
     "id": 61,
     "title": "Leather Straps Wristwatch",
+    "ar_title":"ساعة يد بأحزمة جلدية",
     "description": "Style:Sport ,Clasp:Buckles ,Water Resistance Depth:3Bar",
+    "ar_description":"لنمط: رياضي، المشبك: أبازيم، عمق مقاومة الماء: 3 بار",
     "price": 120,
     "discountPercentage": 7.14,
     "rating": 4.63,
@@ -512,7 +556,7 @@
     },
     "quantity": 3,
     "brand": "Naviforce",
-    "category": "mens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/61/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/61/1.jpg",
@@ -523,7 +567,9 @@
   {
     "id": 62,
     "title": "Waterproof Leather Brand Watch",
+    "ar_title":"ساعة ماركة جلدية مقاومة للماء",
     "description": "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
+    "ar_description":"تاج الساعة مطلي بالكهرباء البرونزية IPS صديق للبيئة؛ نظام عرض لمدة 12 ساعة",
     "price": 46,
     "discountPercentage": 3.15,
     "rating": 4.05,
@@ -533,7 +579,7 @@
     },
     "quantity": 3,
     "brand": "SKMEI 9117",
-    "category": "mens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/62/1.jpg",
@@ -543,7 +589,9 @@
   {
     "id": 63,
     "title": "Royal Blue Premium Watch",
+    "ar_title":"ساعة رويال بلو بريميوم",
     "description": "Men Silver Chain Royal Blue Premium Watch Latest Analog Watch",
+    "ar_description":"ساعة رجالية بسلسلة فضية باللون الأزرق الملكي بريميوم أحدث ساعة تناظرية",
     "price": 50,
     "discountPercentage": 2.56,
     "rating": 4.89,
@@ -553,7 +601,7 @@
     },
     "quantity": 3,
     "brand": "SKMEI 9117",
-    "category": "mens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/63/thumbnail.webp",
     "images": [
       "https://i.dummyjson.com/data/products/63/1.jpg",
@@ -566,7 +614,9 @@
    
     "id": 64,
     "title": "Leather Strap Skeleton Watch",
+    "ar_title":"ساعة هيكل عظمي بحزام جلدي",
     "description": "Leather Strap Skeleton Watch for Men - Stylish and Latest Design",
+    "ar_description":"ساعة هيكل عظمي بحزام جلدي للرجال - تصميم أنيق وأحدث",
     "price": 46,
     "discountPercentage": 10.2,
     "rating": 4.98,
@@ -576,7 +626,7 @@
     },
     "quantity": 3,
     "brand": "Strap Skeleton",
-    "category": "mens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/64/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/64/1.jpg",
@@ -589,7 +639,9 @@
     
     "id": 65,
     "title": "Stainless Steel Wrist Watch",
+    "ar_title":"ساعة يد ستانلس ستيل",
     "description": "Stylish Watch For Man (Luxury) Classy Men's Stainless Steel Wrist Watch - Box Packed",
+    "ar_description":"ساعة أنيقة للرجال (فاخرة) ساعة يد رجالية من الفولاذ المقاوم للصدأ - معبأة في صندوق",
     "price": 47,
     "discountPercentage": 17.79,
     "rating": 4.79,
@@ -599,7 +651,7 @@
     },
     "quantity": 3,
     "brand": "Stainless",
-    "category": "mens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/65/thumbnail.webp",
     "images": [
       "https://i.dummyjson.com/data/products/65/1.jpg",
@@ -613,7 +665,9 @@
     
     "id": 66,
     "title": "Steel Analog Couple Watches",
+    "ar_title":"ساعات زوجين التناظرية الصلب",
     "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
+    "ar_description":"تصميم أنيق، أنيق، فريد وعصري، ملابس مريحة",
     "price": 35,
     "discountPercentage": 3.23,
     "rating": 4.79,
@@ -623,7 +677,7 @@
     },
     "quantity": 3,
     "brand": "Eastern Watches",
-    "category": "womens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/66/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/66/1.jpg",
@@ -637,7 +691,9 @@
     
     "id": 67,
     "title": "Fashion Magnetic Wrist Watch",
+    "ar_title":"ساعة يد مغناطيسية عصرية",
     "description": "Buy this awesome  The product is originally manufactured by the company and it's a top selling product with a very reasonable",
+    "ar_description":"اشتري هذا المنتج الرائع الذي تم تصنيعه في الأصل من قبل الشركة وهو المنتج الأكثر مبيعًا وبأسعار معقولة جدًا",
     "price": 60,
     "discountPercentage": 16.69,
     "rating": 4.03,
@@ -647,7 +703,7 @@
     },
     "quantity": 3,
     "brand": "Eastern Watches",
-    "category": "womens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/67/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/67/1.jpg",
@@ -659,9 +715,11 @@
   },
   {
     
-    "id": 68,
+    "id":68,
     "title": "Stylish Luxury Digital Watch",
+    "ar_title":"ساعة رقمية فاخرة وأنيقة",
     "description": "Stylish Luxury Digital Watch For Girls / Women - Led Smart Ladies Watches For Girls",
+    "ar_description":"ساعة رقمية فاخرة وأنيقة للفتيات / النساء - ساعات LED ذكية للسيدات للفتيات",
     "price": 57,
     "discountPercentage": 9.03,
     "rating": 4.55,
@@ -671,7 +729,7 @@
     },
     "quantity": 3,
     "brand": "Luxury Digital",
-    "category": "womens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/68/thumbnail.webp",
     "images": [
       "https://i.dummyjson.com/data/products/68/1.jpg",
@@ -682,7 +740,9 @@
     
     "id": 69,
     "title": "Golden Watch Pearls Bracelet Watch",
+    "ar_title":"ساعة ذهبية بسوار من اللؤلؤ",
     "description": "Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women",
+    "ar_description":"تفاصيل المنتج عن ساعة جولدن واتش بسوار من اللؤلؤ للبنات - ساعة بسوار نسائي بسلسلة ذهبية للنساء",
     "price": 47,
     "discountPercentage": 17.55,
     "rating": 4.77,
@@ -692,7 +752,7 @@
     },
     "quantity": 3,
     "brand": "Watch Pearls",
-    "category": "womens-watches",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/69/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/69/1.jpg",
@@ -706,7 +766,9 @@
     
     "id": 70,
     "title": "Stainless Steel Women",
+    "ar_title":"نساء من الفولاذ المقاوم للصدأ",
     "description": "Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies",
+    "ar_description":"ساعة يد نسائية Skmei 1830 بمينا صدفي من الفولاذ المقاوم للصدأ ساعة يد نسائية بسوار للسيدات ساعات كوارتز للسيدات",
     "price": 35,
     "discountPercentage": 8.98,
     "rating": 4.08,
@@ -728,7 +790,9 @@
     
     "id": 71,
     "title": "Women Shoulder Bags",
+    "ar_title":"حقائب الكتف النسائية",
     "description": "LouisWill Women Shoulder Bags Long Clutches Cross Body Bags Phone Bags PU Leather Hand Bags Large Capacity Card Holders Zipper Coin Purses Fashion Crossbody Bags for Girls Ladies",
+    "ar_description":"حقائب كتف نسائية من LouisWill براثن طويلة حقائب كروس للجسم حقائب هاتف من جلد البولي يوريثان حقائب يد ذات سعة كبيرة حاملي بطاقات بسحاب ومحافظ للعملات المعدنية حقائب كروس أنيقة للفتيات والسيدات",
     "price": 46,
     "discountPercentage": 14.65,
     "rating": 4.71,
@@ -738,7 +802,7 @@
     },
     "quantity": 3,
     "brand": "LouisWill",
-    "category": "womens-bags",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/71/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/71/1.jpg",
@@ -751,7 +815,9 @@
     
     "id": 72,
     "title": "Handbag For Girls",
+    "ar_title":"حقيبة يد للبنات",
     "description": "This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.",
+    "ar_description":"تم تصميم هذه الموضة لإضافة تأثير ساحر إلى ملابسك الكاجوال. هذه الحقيبة مصنوعة من الجلد الصناعي",
     "price": 23,
     "discountPercentage": 17.5,
     "rating": 4.91,
@@ -761,7 +827,7 @@
     },
     "quantity": 3,
     "brand": "LouisWill",
-    "category": "womens-bags",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/72/thumbnail.webp",
     "images": [
       "https://i.dummyjson.com/data/products/72/1.jpg",
@@ -775,7 +841,9 @@
     
     "id": 73,
     "title": "Fancy hand clutch",
+    "ar_title":"قبضة يد فاخرة",
     "description": "This fashion is designed to add a charming effect to your casual outfit. This Bag is made of synthetic leather.",
+    "ar_description":"تم تصميم هذه الموضة لإضافة تأثير ساحر إلى ملابسك الكاجوال. هذه الحقيبة مصنوعة من الجلد الصناعي",
     "price": 44,
     "discountPercentage": 10.39,
     "rating": 4.18,
@@ -785,7 +853,7 @@
     },
     "quantity": 3,
     "brand": "Bracelet",
-    "category": "womens-bags",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/73/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/73/1.jpg",
@@ -798,7 +866,9 @@
     
     "id": 74,
     "title": "Leather Hand Bag",
+    "ar_title":"حقيبة يد جلدية",
     "description": "It features an attractive design that makes it a must have accessory in your collection. We sell different kind of bags for boys, kids, women, girls and also for unisex.",
+    "ar_description":"تتميز بتصميم جذاب يجعلها إكسسوارًا ضروريًا في مجموعتك. نبيع أنواعًا مختلفة من الحقائب للأولاد، والأطفال، والنساء، والفتيات وأيضًا للجنسين",
     "price": 57,
     "discountPercentage": 11.19,
     "rating": 4.01,
@@ -808,7 +878,7 @@
     },
     "quantity": 3,
     "brand": "Copenhagen Luxe",
-    "category": "womens-bags",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/74/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/74/1.jpg",
@@ -822,7 +892,9 @@
     
     "id": 75,
     "title": "Seven Pocket Women Bag",
+    "ar_title":"حقيبة نسائية ذات سبعة جيوب",
     "description": "Seven Pocket Women Bag Handbags Lady Shoulder Crossbody Bag Female Purse Seven Pocket Bag",
+    "ar_description":"حقيبة يد نسائية ذات سبعة جيوب حقائب كتف نسائية حقيبة كروس محفظة نسائية سبعة جيوب",
     "price": 68,
     "discountPercentage": 14.87,
     "rating": 4.93,
@@ -832,7 +904,7 @@
     },
     "quantity": 3,
     "brand": "Steal Frame",
-    "category": "womens-bags",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/75/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/75/1.jpg",
@@ -845,7 +917,9 @@
     
     "id": 77,
     "title": "Rose Ring",
+    "ar_title":"خاتم الورد",
     "description": "Brand: The Greetings Flower Colour: RedRing Colour: GoldenSize: Adjustable",
+    "ar_description":"لعلامة التجارية: ذا جريتنجز فلاور اللون: أحمر لون الخاتم: ذهبي المقاس: قابل للتعديل",
     "price": 100,
     "discountPercentage": 3.22,
     "rating": 4.21,
@@ -855,7 +929,7 @@
     },
     "quantity": 3,
     "brand": "Copenhagen Luxe",
-    "category": "womens-jewellery",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/77/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/77/1.jpg",
@@ -868,7 +942,9 @@
     
     "id": 78,
     "title": "Rhinestone Korean Style Open Rings",
+    "ar_title":"حجر الراين خواتم النمط الكوري المفتوحة",
     "description": "Fashion Jewellery 3Pcs Adjustable Pearl Rhinestone Korean Style Open Rings For Women",
+    "ar_description":"مجوهرات عصرية 3 قطع خواتم مفتوحة من حجر الراين واللؤلؤ قابلة للتعديل على الطراز الكوري للنساء",
     "price": 30,
     "discountPercentage": 8.02,
     "rating": 4.69,
@@ -878,7 +954,7 @@
     },
     "quantity": 3,
     "brand": "Fashion Jewellery",
-    "category": "womens-jewellery",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/78/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/78/thumbnail.jpg"
@@ -888,7 +964,9 @@
     
     "id": 79,
     "title": "Elegant Female Pearl Earrings",
+    "ar_title":"أقراط اللؤلؤ النسائية الأنيقة",
     "description": "Elegant Female Pearl Earrings Set Zircon Pearl Earings Women Party Accessories 9 Pairs/Set",
+    "ar_description":"طقم أقراط اللؤلؤ الأنثوية الأنيقة أقراط لؤلؤ الزركون للنساء إكسسوارات الحفلات 9 زوج/مجموعة",
     "price": 30,
     "discountPercentage": 12.8,
     "rating": 4.74,
@@ -898,7 +976,7 @@
     },
     "quantity": 3,
     "brand": "Fashion Jewellery",
-    "category": "womens-jewellery",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/79/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/79/1.jpg"
@@ -908,7 +986,9 @@
     
     "id": 80,
     "title": "Chain Pin Tassel Earrings",
+    "ar_title":"سلسلة شرابة دبوس الأقراط",
     "description": "Pair Of Ear Cuff Butterfly Long Chain Pin Tassel Earrings - Silver ( Long Life Quality Product)",
+    "ar_description":"زوج من الأقراط ذات السلسلة الطويلة على شكل فراشة - فضي (منتج عالي الجودة يدوم طويلاً)",
     "price": 45,
     "discountPercentage": 17.75,
     "rating": 4.59,
@@ -918,7 +998,7 @@
     },
     "quantity": 3,
     "brand": "Cuff Butterfly",
-    "category": "womens-jewellery",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/80/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/80/1.jpg",
@@ -932,7 +1012,9 @@
     
     "id": 81,
     "title": "Round Silver Frame Sun Glasses",
+    "ar_title":"نظارات شمسية بإطار فضي دائري",
     "description": "A pair of sunglasses can protect your eyes from being hurt. For car driving, vacation travel, outdoor activities, social gatherings,",
+    "ar_description":"وج من النظارات الشمسية يمكن أن يحمي عينيك من التعرض للأذى. لقيادة السيارة، والسفر أثناء العطلات، والأنشطة الخارجية، والتجمعات الاجتماعية",
     "price": 19,
     "discountPercentage": 10.1,
     "rating": 4.94,
@@ -942,7 +1024,7 @@
     },
     "quantity": 3,
     "brand": "Designer Sun Glasses",
-    "category": "sunglasses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/81/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/81/1.jpg",
@@ -956,7 +1038,9 @@
     
     "id": 82,
     "title": "Kabir Singh Square Sunglass",
+    "ar_title":"نظارة شمسية مربعة كبيرة سينغ",
     "description": "Orignal Metal Kabir Singh design 2020 Sunglasses Men Brand Designer Sun Glasses Kabir Singh Square Sunglass",
+    "ar_description":"نظارات شمسية أصلية معدنية كبيرة سينغ تصميم 2020 للرجال ذات علامة تجارية مصممة نظارات شمسية مربعة كبيرة سينغ",
     "price": 50,
     "discountPercentage": 15.6,
     "rating": 4.62,
@@ -966,7 +1050,7 @@
     },
     "quantity": 3,
     "brand": "Designer Sun Glasses",
-    "category": "sunglasses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/82/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/82/1.jpg",
@@ -980,7 +1064,9 @@
    
     "id": 83,
     "title": "Wiley X Night Vision Yellow Glasses",
+    "ar_title":"نظارات وايلي اكس للرؤية الليلية باللون الأصفر",
     "description": "Wiley X Night Vision Yellow Glasses for Riders - Night Vision Anti Fog Driving Glasses - Free Night Glass Cover - Shield Eyes From Dust and Virus- For Night Sport Matches",
+    "ar_description":"نظارات Wiley X Night Vision الصفراء للراكبين - نظارات القيادة الليلية المضادة للضباب - غطاء زجاجي ليلي مجاني - حماية العيون من الغبار والفيروسات - للمباريات الرياضية الليلية",
     "price": 30,
     "discountPercentage": 6.33,
     "rating": 4.97,
@@ -990,7 +1076,7 @@
     },
     "quantity": 3,
     "brand": "mastar watch",
-    "category": "sunglasses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/83/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/83/1.jpg",
@@ -1004,7 +1090,9 @@
     
     "id": 84,
     "title": "Square Sunglasses",
+    "ar_title":"نظارات شمسية مربعة",
     "description": "Fashion Oversized Square Sunglasses Retro Gradient Big Frame Sunglasses For Women One Piece Gafas Shade Mirror Clear Lens 17059",
+    "ar_description":"نظارات شمسية مربعة كبيرة الحجم بإطار كبير متدرج عتيق للنساء قطعة واحدة من Gafas عدسات شفافة 1705",
     "price": 28,
     "discountPercentage": 13.89,
     "rating": 4.64,
@@ -1014,7 +1102,7 @@
     },
     "quantity": 3,
     "brand": "mastar watch",
-    "category": "sunglasses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/84/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/84/1.jpg",
