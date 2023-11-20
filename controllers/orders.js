@@ -48,7 +48,7 @@ let getOrderByRetailerID = async (req, res)=>{
           }
         })
     })
-    console.log(orders);
+    // console.log(orders);
     res
       .status(200)
       .json(orders);
