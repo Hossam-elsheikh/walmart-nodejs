@@ -169,6 +169,22 @@ let deleteProduct = async (req, res) => {
   }
 };
 
+let deleteProductanyone = async (req, res) => {
+  let product_id = req.params.id;
+  try {
+    let resolved = await productModel.deleteOne({
+      _id: product_id
+    });
+    if (resolved.deletedCount === 0) {
+      res.status(401).json({ message: "failed to delete product" });
+    } else {
+      res.status(200).json({ message: "Product deleted successfully" });
+    }
+  } catch (err) {
+    res.status(401).json({ message: "failed to delete product" });
+  }
+};
+
 //? add product to favorites list
 let addToFav = async (req, res) => {
   let {id} = req.body
@@ -220,9 +236,9 @@ module.exports = {
   addProduct,
   editProduct,
   deleteProduct,
+  deleteProductanyone,
   getByCat,
   getProductById,
   addToFav,
   getFavorite,
-
 };

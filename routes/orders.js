@@ -8,5 +8,4 @@ Router.get('/all',auth,getOrderByRetailerID);
 Router.post('/',auth,createOrder);
 Router.patch('/:id',auth,updateOrder);
 Router.delete('/:id',auth,deleteOrder);
-
 module.exports = Router;
