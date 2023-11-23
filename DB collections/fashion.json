@@ -1114,7 +1114,9 @@
     
     "id": 85,
     "title": "LouisWill Men Sunglasses",
+    "ar_title":"نظارات لويس ويل للرجال",
     "description": "LouisWill Men Sunglasses Polarized Sunglasses UV400 Sunglasses Day Night Dual Use Safety Driving Night Vision Eyewear AL-MG Frame Sun Glasses with Free Box for Drivers",
+    "ar_description":"ظارات لويس ويل الشمسية المستقطبة للرجال نظارات شمسية UV400 ليلاً ونهارًا للاستخدام المزدوج، نظارات رؤية ليلية آمنة للقيادة بإطار AL-MG مع صندوق مجاني للسائقين",
     "price": 50,
     "discountPercentage": 11.27,
     "rating": 4.98,
@@ -1124,7 +1126,7 @@
     },
     "quantity": 3,
     "brand": "LouisWill",
-    "category": "sunglasses",
+    "category": "fashion",
     "thumbnail": "https://i.dummyjson.com/data/products/85/thumbnail.jpg",
     "images": [
       "https://i.dummyjson.com/data/products/85/1.jpg",
@@ -1136,7 +1138,9 @@
     
     "id": 101,
     "title": "Woman Shawl",
+    "ar_title":"شال امرأة",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 149,
     "discountPercentage": 12.96,
     "rating": 4.69,
@@ -1145,7 +1149,7 @@
       "$oid": "6516e4c047159d92ba137d7c"
     },
     "brand": "DeFacto",
-    "category": "Woman Fashion",
+    "category": "fashion",
     "thumbnail": "https://handknitted.shop/1942-large_default/womens-shawl-pinkish-gray-fall-clothes.jpg",
     "images": [
       "https://i.pinimg.com/736x/f6/b7/7f/f6b77f3f3aa9eda22aafcda83f4cf74d.jpg",
@@ -1159,7 +1163,9 @@
     
     "id": 102,
     "title": "Women Shawl",
+    "ar_title":"شال نسائي",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 160,
     "discountPercentage": 9.34,
     "rating": 4.8,
@@ -1168,7 +1174,7 @@
       "$oid": "6516e4c047159d92ba137d7c"
     },
     "brand": "DeFacto",
-    "category": "Woman Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/OIP.egSLJsw2MmbR_5XVj1ApkwHaKd?pid=ImgDet&rs=1",
     "images": [
       "https://th.bing.com/th/id/OIP.HsXTdxQLn8X4ituAeYE6tAAAAA?pid=ImgDet&rs=1",
@@ -1181,7 +1187,9 @@
     
     "id": 103,
     "title": "Woman Shawl",
+    "ar_title":"شال امرأة",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 160,
     "discountPercentage": 9.34,
     "rating": 4.7,
@@ -1190,7 +1198,7 @@
       "$oid": "6516e4c047159d92ba137d7c"
     },
     "brand": "DeFacto",
-    "category": "Women's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/OIP.Sx7ezogFysD6lea-VnB-7gHaKe?pid=ImgDet&rs=1",
     "images": [
       "https://th.bing.com/th/id/OIP.GX0-moWTtgqImnGMssU4wQAAAA?pid=ImgDet&rs=1",
@@ -1203,7 +1211,9 @@
     
     "id": 104,
     "title": "Woman Shawl",
+    "ar_title":"شال امرأة",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 349,
     "discountPercentage": 9.34,
     "rating": 4.9,
@@ -1213,7 +1223,7 @@
     },
     "quantity": 228,
     "brand": "DeFacto",
-    "category": "Women's Fashion",
+    "category": "fashion",
     "thumbnail": "https://www.net-a-porter.com/variants/images/1647597316986884/in/w460_q60.jpg",
     "images": [
       "https://www.mrporter.com/variants/images/1647597310782066/in/w2000_q60.jpg",
@@ -1225,7 +1235,9 @@
     
     "id": 105,
     "title": "Woman Shawl",
+    "ar_title":"شال امرأة",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 540,
     "discountPercentage": 9.34,
     "rating": 3.4,
@@ -1235,7 +1247,7 @@
     },
     "quantity": 530,
     "brand": "DeFacto",
-    "category": "Women's Fashion",
+    "category": "fashion",
     "thumbnail": "https://www.refinery29.com/images/10724411.png",
     "images": [
       "https://oldnavy.gap.com/webcontent/0050/212/598/cn50212598.jpg",
@@ -1248,7 +1260,9 @@
     
     "id": 106,
     "title": "Woman Standart Fit Knitted Cardigan",
+    "ar_title":"سترة نسائية محبوكة ذات مقاس قياسي",
     "description": "Material Polyester Blend Colour Name Multicolour Department Women",
+    "ar_description":"المادة مزيج من البوليستر، اسم اللون، متعدد الألوان، قسم نسائي",
     "price": 499,
     "discountPercentage": 5.34,
     "rating": 5,
@@ -1258,7 +1272,7 @@
     },
     "quantity": 300,
     "brand": "DeFacto",
-    "category": "Women's Fashion",
+    "category": "fashion",
     "thumbnail": "https://lsco.scene7.com/is/image/lsco/345840013-alt2-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=600&hei=800",
     "images": [
       "https://lsco.scene7.com/is/image/lsco/345840013-alt2-pdp-lse?fmt=jpeg&qlt=70,1&op_sharpen=0&resMode=sharp2&op_usm=0.8,1,10,0&fit=crop,0&wid=600&hei=800",
@@ -1271,7 +1285,9 @@
     
     "id": 107,
     "title": "Logo T-Shirt Green",
+    "ar_title":"شعار تي شيرت أخضر",
     "description": "Soft and comfortable cotton fabric\nCrew neck and short sleeves\nComfortable, regular fit\nWash according to care label instructions",
+    "ar_description":"قماش قطني ناعم ومريح\nياقة دائرية وأكمام قصيرة\nمريح ومقاس عادي\nيُغسل وفقًا لتعليمات ملصق العناية",
     "price": 744,
     "discountPercentage": 6.7,
     "rating": 5,
@@ -1281,7 +1297,7 @@
     },
     "quantity": 111,
     "brand": "Jack & Jones",
-    "category": "Men's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/R.6b8ee28bc62fef282705297cd8a09618?rik=u%2fBAOBjUlOgkiQ&pid=ImgRaw&r=0",
     "images": [
       "https://th.bing.com/th/id/OIP.4s-_CTN5RFYCMndosGPO7gAAAA?pid=ImgDet&rs=1",
@@ -1294,7 +1310,9 @@
     
     "id": 108,
     "title": "Orca Leather Boots Anthracite",
+    "ar_title":"حذاء أوركا الجلدي أنثراسايت",
     "description": "Genuine and smooth leather upper\nSecure lace-ups with side zipper closure\nSlightly cushioned footbed provides comfort\nPatterned chunky outsole provides traction and grip",
+    "ar_description":"جزء علوي من جلد طبيعي وأملس\nأربطة آمنة مع سحاب جانبي للإغلاق\nوسادة قدم مبطنة قليلاً توفر الراحة\nنعل خارجي مكتنز منقوش يوفر الثبات والإمساك",
     "price": 4829,
     "discountPercentage": 8.49,
     "rating": 5,
@@ -1304,7 +1322,7 @@
     },
     "quantity": 273,
     "brand": "Jack & Jones",
-    "category": "Men's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/R.6b8ee28bc62fef282705297cd8a09618?rik=u%2fBAOBjUlOgkiQ&pid=ImgRaw&r=0",
     "images": [
       "https://i.pinimg.com/originals/7e/b6/6c/7eb66c149fd640f023b304fc1eb847dd.jpg",
@@ -1316,7 +1334,9 @@
     
     "id": 109,
     "title": "Softride Enzo NXT CASTLEROCK-High Risk R",
+    "ar_title":"سوفترايد إنزو NXT كاستليروك-عالية المخاطر R",
     "description": "Sole Material\tRubber\nColour Name\tRED\nDepartment\tMen",
+    "ar_description":"مادة النعل\tمطاط\nاسم اللون\tRED\nالقسم\tرجال",
     "price": 2999,
     "discountPercentage": 8.49,
     "rating": 4.8,
@@ -1326,7 +1346,7 @@
     },
     "quantity": 173,
     "brand": "Jack & Jones",
-    "category": "Men's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/R.6b8ee28bc62fef282705297cd8a09618?rik=u%2fBAOBjUlOgkiQ&pid=ImgRaw&r=0",
     "images": [
       "https://i.ebayimg.com/images/g/4~oAAOSwnFJj-V-h/s-l500.png",
@@ -1339,7 +1359,9 @@
     
     "id": 110,
     "title": "ESS Big Logo Hoodie TR Puma Black",
+    "ar_title":"هوديي بشعار كبير من ESS TR Puma باللون الأسود",
     "description": "Material\tCombination\nColour Name\tblack\nDepartment\tMen",
+    "ar_description":"المواد\tالمجموعة\nاسم اللون\tأسود\nالقسم\tرجال",
     "price": 2649,
     "discountPercentage": 8.49,
     "rating": 3.2,
@@ -1349,7 +1371,7 @@
     },
     "quantity": 200,
     "brand": "Jack & Jones",
-    "category": "Men's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/R.6b8ee28bc62fef282705297cd8a09618?rik=u%2fBAOBjUlOgkiQ&pid=ImgRaw&r=0",
     "images": [
       "https://media.endclothing.com/media/f_auto,q_auto:eco,w_1600/prodmedia/media/catalog/product/0/3/03-03-2021_LL_CV4316-010_5_1.jpg",
@@ -1362,7 +1384,9 @@
     
     "id": 111,
     "title": "slim-fit-long-sleeve-dobby-men's-shirt",
+    "ar_title":"قميص دوبي رجالي ذو قصة ضيقة وأكمام طويلة",
     "description": "Material\tCotton Blend\nColour Name\tBLUE\nDepartment\tMen\nMaterial Composition\tMAIN FABRIC: 64% Cotton 36% Polyester\nItem Pack Quantity\tSingle\nPack Size\tSingle\nModel Number\tW21770Z8-S7N-823090\nModel Name\tW21770Z8-S7N-823090",
+    "ar_description":"المواد\tمزيج القطن\nاسم اللون\tأزرق\nالقسم\tرجال\nتركيب المواد\tالنسيج الرئيسي: 64% قطن 36% بوليستر\nكمية العبوة\tمفردة\nحجم العبوة\tمفرد\nرقم الموديل\tW21770Z8-S7N- 823090\nاسم الطراز\tW21770Z8-S7N-823090",
     "price": 549,
     "discountPercentage": 8.49,
     "rating": 3.2,
@@ -1372,7 +1396,7 @@
     },
     "quantity": 60,
     "brand": "LC Waikiki",
-    "category": "Men's Fashion",
+    "category": "fashion",
     "thumbnail": "https://th.bing.com/th/id/R.6b8ee28bc62fef282705297cd8a09618?rik=u%2fBAOBjUlOgkiQ&pid=ImgRaw&r=0",
     "images": [
       "https://th.bing.com/th/id/OIP.Lco0Wr9Y83adxlrhZGPCfwHaKX?pid=ImgDet&w=1161&h=1625&rs=1",
