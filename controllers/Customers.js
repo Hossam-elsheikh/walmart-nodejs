@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt')
 
 // ? get all customers
 let getAllCustomers =async (req,res)=>{
-    
 try{
     let customers = await customerModel.find();
     res.status(200).json({message:'customers retrieved successfully',customers});
