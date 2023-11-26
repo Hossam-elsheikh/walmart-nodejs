@@ -31,7 +31,10 @@ let RetailersSchema = mongoose.Schema({
     },
     categories:{
         type: Array,
-    }
+    },
+    products:{
+        type:Array,
+    },
 },{timestamps:true})
 
 RetailersSchema.pre('save', async function(next){
