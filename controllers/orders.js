@@ -105,10 +105,24 @@ let deleteOrder = async (req, res) => {
   }
 };
 
+let getAllOrders =async (req, res) => {
+  try {
+    let orders = await orderModel.find();
+    if (orders) {
+        res.status(200).json({ message: " Orders retrieved successfully" , Orders:orders });
+    } else {
+      res.status(404).json({ message: "there is no order yet ..!" });
+    }
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+}
+
 module.exports = {
   createOrder,
   getOrderByIdCustomer,
   deleteOrder,
   updateOrder,
-  getOrderByRetailerID
+  getOrderByRetailerID,
+  getAllOrders
 };
