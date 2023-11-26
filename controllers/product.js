@@ -92,7 +92,7 @@ let addProduct = async (req, res) => {
 
 let getRetailerProducts = async (req, res) => {
   // Get all products by this retailer
-  let retailer_id = req.headers.id;
+  let retailer_id = req.headers.id || req.id;
   let role = req.role;
   let name = req.name;
   let phone = req.phone;
