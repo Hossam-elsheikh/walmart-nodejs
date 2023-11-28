@@ -44,6 +44,7 @@ let customerSchema = mongoose.Schema({
     wishList:{
         type:Array
     }
+    
 },{timestamps: true});
 
 // ?=====> hashing the Password <======
