@@ -38,7 +38,7 @@ let addToCart = async (req, res) => {
   if (isAdded) {
     return res
       .status(200)
-      .json({message:"you already have this product in your cart"});
+      .json({ message: "you already have this product in your cart" });
   } else {
     try {
       await customerModel.updateOne(
@@ -54,18 +54,18 @@ let addToCart = async (req, res) => {
   }
 };
 
-// ? get a specific product by id 
+// ? get a specific product by id
 let getProductById = async (req, res) => {
-  let {id} = req.params;
+  let { id } = req.params;
   try {
     let product = await productModel.findOne({ _id: id });
-    res.status(200).json({ message: "Successfully" , data: product });
+    res.status(200).json({ message: "Successfully", data: product });
   } catch (err) {
     res.status(401).json({ message: err.message });
   }
 };
 
-/////////////// retailer 
+/////////////// retailer
 // ? new product added by retailer
 let addProduct = async (req, res) => {
   // add product and assign retailer_id to it
@@ -96,7 +96,7 @@ let getRetailerProducts = async (req, res) => {
   let role = req.role;
   let name = req.name;
   let phone = req.phone;
-  if (role == "user" ) {
+  if (role == "user") {
     res.status(401).json({
       message:
         "you're not allowed to add a product, please login as a retailer",
@@ -108,7 +108,12 @@ let getRetailerProducts = async (req, res) => {
   }
   res
     .status(200)
-    .json({ message: "Products successfully retrieved", products: products , name:name , phone });
+    .json({
+      message: "Products successfully retrieved",
+      products: products,
+      name: name,
+      phone,
+    });
 };
 
 // ? update product
@@ -127,9 +132,9 @@ let editProduct = async (req, res) => {
     let product = await productModel.updateOne(
       { _id: product_id, retailer_id: retailer_id },
       {
-        title: req.body.title ,
-        price: req.body.price ,
-        discountPercentage: req.body.discount ,
+        title: req.body.title,
+        price: req.body.price,
+        discountPercentage: req.body.discount,
       }
     );
     if (!product) {
@@ -173,7 +178,7 @@ let deleteProductanyone = async (req, res) => {
   let product_id = req.params.id;
   try {
     let resolved = await productModel.deleteOne({
-      _id: product_id
+      _id: product_id,
     });
     if (resolved.deletedCount === 0) {
       res.status(401).json({ message: "failed to delete product" });
@@ -185,48 +190,51 @@ let deleteProductanyone = async (req, res) => {
   }
 };
 
-//? add product to favorites list
-let addToFav = async (req, res) => {
-  let {id} = req.body
-  // console.log(id);
-  let favorites ;
-  let role = req.role;
-  // console.log(role);
-  if (role !== "user") {
-    res.status(401).json({
-      message:
-        "you're not allowed to add a product to favorite , you are a retailer",
-    });
-  }
-  try{
-      let prd = await productModel.updateOne({_id: id},{favorite:true})
-      favorites =await productModel.find({favorite:true})
-    res.status(200).json({message:"successfully", data: favorites});
-  }
-   catch(err) {
-    res.status(401).json({ message: "failed to add to favorite " });
-  }
-}
 
-// ?get fav product
-let getFavorite = async (req, res)=>{
-let favorites;
-let role = req.role;
-if (role !== "user") {
-  res.status(401).json({
-    message:
-      "you're not allowed to add a product to favorite , you are a retailer",
-  });
-}
-try{
-    favorites =await productModel.find({favorite:true})
-    console.log(favorites);
-    res.status(200).json({message:"successfully", data: favorites});
-}
- catch(err) {
-  res.status(401).json({ message: "failed to add to favorite " });
-}
-}
+// ? customer Rating
+let addRating = async (req, res) => {
+  let { newRating, productId } = req.body;
+  let userId = req.id;
+  let role = req.role;
+  if (role != "user") {
+    res
+      .status(200)
+      .json({
+        message: "you're not allowed to rat a product, you are not  a customer",
+      });
+  }
+  try {
+    if(newRating > 5 || newRating <=0 ){
+      res
+      .status(200)
+      .json({
+        message: "invalid rating"
+      });
+    }
+    let newPrd = await productModel.findById({ _id: productId });
+    let rating = [...newPrd.rating, newRating];
+    if (newRating && newPrd) {
+      let updatePrdRating = await productModel.findByIdAndUpdate(productId, {
+        rating: rating,
+      });
+    }
+    let Prd = await productModel.findById({ _id: productId });
+    let prdRating = Prd.rating;
+
+    let sum = prdRating.reduce((a ,b)=> a + b ,0);
+    let result = Math.round(sum/prdRating.length)
+    
+    let finalPrd = await productModel.findByIdAndUpdate(productId, {
+      ratingQuantity: result,
+    });
+
+    let finalResult = await productModel.findById({ _id: productId });
+
+    res.status(200).json({ message: "success", product:finalResult , rate:result });
+  } catch (err) {
+    res.status(501).json({ message: err.message });
+  }
+};
 module.exports = {
   addToCart,
   getAllProducts,
@@ -237,6 +245,7 @@ module.exports = {
   deleteProductanyone,
   getByCat,
   getProductById,
-  addToFav,
-  getFavorite,
+  // addToFav,
+  // getFavorite,
+  addRating,
 };

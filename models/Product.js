@@ -38,7 +38,13 @@ let ProductSchema = mongoose.Schema({
         type: String,
     },
     rating:{
-        type: Number
+        type: [Number],
+        enum:[1,2,3,4,5],
+        default:1
+    },
+    ratingQuantity:{
+        type:Number,
+        default:1,
     },
     category:{
         type:String,
