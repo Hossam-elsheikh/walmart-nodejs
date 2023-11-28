@@ -92,11 +92,11 @@ let addProduct = async (req, res) => {
 
 let getRetailerProducts = async (req, res) => {
   // Get all products by this retailer
-  let retailer_id = req.id;
+  let retailer_id = req.headers.id || req.id;
   let role = req.role;
   let name = req.name;
   let phone = req.phone;
-  if (role !== "retailer") {
+  if (role == "user" ) {
     res.status(401).json({
       message:
         "you're not allowed to add a product, please login as a retailer",
@@ -210,10 +210,8 @@ let addToFav = async (req, res) => {
 
 // ?get fav product
 let getFavorite = async (req, res)=>{
-console.log('hiiiiiiiii');
 let favorites;
 let role = req.role;
-console.log(role);
 if (role !== "user") {
   res.status(401).json({
     message:
