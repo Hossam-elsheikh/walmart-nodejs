@@ -35,6 +35,18 @@ let RetailersSchema = mongoose.Schema({
     products:{
         type:Array,
     },
+    withdrawalThreshold:{
+        type:Number,
+    },
+    paypal:{
+        type:String,
+    },
+    country:{
+        type:String,
+    },
+    postal:{
+        type:Number,
+    }
 },{timestamps:true})
 
 RetailersSchema.pre('save', async function(next){

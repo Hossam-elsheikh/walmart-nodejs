@@ -1,10 +1,11 @@
 const express = require('express');
-let {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check} = require('../controllers/Retailers')
+let {addNewRetailer,getRetailerInfo,getAllRetailers,loginRetailer,editRetailerData , check} = require('../controllers/Retailers')
 let {auth} = require('../middlewares/auth');
 const Router = express.Router();
 
 
 Router.get('/',getAllRetailers )
+Router.get('/info',auth,getRetailerInfo )
 
 Router.post('/login',loginRetailer)
 

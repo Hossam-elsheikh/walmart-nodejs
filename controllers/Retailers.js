@@ -2,6 +2,15 @@ let RetailerModel = require('../models/Retailer');
 const jwt =require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
+let getRetailerInfo = async (req, res) => {
+    let retailerID = req.id;
+    try{
+        let retailerInfo = await RetailerModel.findOne({_id:retailerID})
+        res.status(200).json(retailerInfo)
+    }catch(e){
+        res.status(404).json({message:"Error fetching data"})
+    }
+}
 // ? SignUp for Retailer
 let addNewRetailer = async (req,res)=>{
     let retailer = req.body
@@ -45,9 +54,9 @@ let loginRetailer = async (req, res) => {
 // ? update Retailer
 let editRetailerData = async (req,res)=>{
     let retailerID = req.id
-    let {name,email,phone}= req.body
+    let newInfo= req.body.data
     try{
-        let retailer = await RetailerModel.updateOne({_id:retailerID},{email:email,name:name ,phone});
+        let retailer = await RetailerModel.replaceOne({_id:retailerID},newInfo);
         res.status(200).json({message:"edited successfully",body:retailer})
 
     }catch(err){
@@ -70,4 +79,4 @@ let check = async(req,res)=>{
             res.status(400).json({message:err.message});
         }
 }
-module.exports = {addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check}
+module.exports = {getRetailerInfo,addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check}
