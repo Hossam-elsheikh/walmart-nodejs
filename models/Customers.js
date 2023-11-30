@@ -43,6 +43,10 @@ let customerSchema = mongoose.Schema({
     },
     wishList:{
         type:Array
+    },
+    isPanned:{
+        type: Boolean,
+        default:false
     }
 },{timestamps: true});
 
