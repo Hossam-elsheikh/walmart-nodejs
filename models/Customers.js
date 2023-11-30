@@ -48,6 +48,7 @@ let customerSchema = mongoose.Schema({
         type: Boolean,
         default:false
     }
+    
 },{timestamps: true});
 
 // ?=====> hashing the Password <======

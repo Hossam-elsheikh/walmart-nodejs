@@ -15,15 +15,14 @@ let getCustomerData = async (req, res) => {
   }
 };
 // ? get all customers
-let getAllCustomers = async (req, res) => {
-  try {
+let getAllCustomers =async (req,res)=>{
+try{
     let customers = await customerModel.find();
-    console.log(customers);
-    res.status(200).json(customers);
-  } catch (err) {
-    res.status(500).json("Something Went Wrong..! );");
-  }
-};
+    res.status(200).json({message:'customers retrieved successfully',customers});
+}catch(err){
+    res.status(500).json({message:'Something Went Wrong..! '});
+}
+}
 
 // ? signup first time
 let signUp = async (req, res) => {

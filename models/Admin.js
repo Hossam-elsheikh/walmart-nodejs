@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt')
-let RetailersSchema = mongoose.Schema({
+let AdminSchema = mongoose.Schema({
     name:{
         type:String,
         maxLength:20,
@@ -27,23 +27,16 @@ let RetailersSchema = mongoose.Schema({
     },
     role:{
         type:String,
-        default:'retailer'
-    },
-    categories:{
-        type: Array,
-    },
-    products:{
-        type:Array,
-    },
+        default:'admin'
+    }
 },{timestamps:true})
 
-RetailersSchema.pre('save', async function(next){
+AdminSchema.pre('save', async function(next){
     let salt = await bcrypt.genSalt(10)
     let hashedPassword = await bcrypt.hash(this.password, salt)
     this.password = hashedPassword
     next()
 })
 
-let RetailerModel = mongoose.model('Retailer',RetailersSchema)
-module.exports = RetailerModel
-
+let AdminModel = mongoose.model('Admin',AdminSchema)
+module.exports = AdminModel

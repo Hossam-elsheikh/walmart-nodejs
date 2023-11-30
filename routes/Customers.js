@@ -23,6 +23,8 @@ Router.patch('/logout',auth, logout);
 
 //? delete
 Router.delete('/delete/:id', auth , delet);
+Router.delete('/admin/:id', delet);
+
 
 //? update
 Router.patch('/update',auth, update);
