@@ -8,7 +8,6 @@ let getCustomerData = async (req, res) => {
   let customerID = req.id;
   try {
     let customer = await customerModel.findOne({ _id: customerID });
-    console.log(customer);
     res.status(200).json(customer);
   } catch (err) {
     res.status(500).json("Something Went Wrong..! );");

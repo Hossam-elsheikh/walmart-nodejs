@@ -67,13 +67,10 @@ let updateOrder = async (req, res) => {
     newCart.forEach((item)=>{
       if(item.id == product_id){
         item.status = upStatus
-        console.log(item);
       }
     }
     )
     await orderModel.updateOne({_id: order_id}, {$set : {cart_Customer: newCart}})
-    // console.log(order.cart_Customer);
-
     if (!order) {
       return res.status(404).json({ message: "Order not found" });
     }

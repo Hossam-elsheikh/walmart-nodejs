@@ -126,7 +126,6 @@ let editQuantity = async (req,res) => {
           
         });
         let updatedCustomer = await customerModel.updateOne({_id:id} , {$set : {cart:newCart}});
-        console.log(customer.cart);
 
         res.status(200).json({message:"Quantity Updated Successfully",  cartUpdat:customer.cart});    
     }catch(err){
@@ -147,14 +146,12 @@ let totalPrice = async (req,res)=>{
     if(!customer){
       return res.status(401).json({message: 'this Customer is not found  please Sign Up First'}); 
     }
-    console.log(customer);
     let newCart = customer.cart.map((pro)=>{
       let prodPrice = pro.price * pro.quantity;
       totalPrice += prodPrice;
       return totalPrice;
     })
 
-    console.log(totalPrice);
     res.status(200).json({message:"total Prcie is",  totalPrice : totalPrice});  
   
   }catch(err){
