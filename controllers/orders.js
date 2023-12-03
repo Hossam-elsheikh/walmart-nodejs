@@ -1,5 +1,6 @@
 const customerModel = require("../models/Customers");
 let { orderModel } = require("../models/orders");
+let RetailerModel = require('../models/Retailer');
 require('dotenv').config();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
@@ -103,10 +104,28 @@ let deleteOrder = async (req, res) => {
 };
 
 let getAllOrders =async (req, res) => {
+  let name = []
+  let email  = [];
+  let prds = [];
   try {
     let orders = await orderModel.find();
     if (orders) {
-        res.status(200).json({ message: " Orders retrieved successfully" , Orders:orders });
+      await Promise.all (await  orders.map(async order => {
+        
+        ret = await Promise.all (order.cart_Customer.map(async prd=>{
+
+          await RetailerModel.findOne({_id:prd.retailer_id}).then(res=>{
+            prd.name = res.name;
+            prd.email = res.email;
+            name.push(res?.name);
+            email.push(res?.email);
+         })
+         prds.push(prd)
+
+        }))
+      
+      }))
+        res.status(200).json({ message: " Orders retrieved successfully" , Orders:prds , ret:{name,email}   });
     } else {
       res.status(404).json({ message: "there is no order yet ..!" });
     }
