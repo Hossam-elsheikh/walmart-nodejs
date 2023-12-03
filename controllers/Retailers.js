@@ -79,4 +79,22 @@ let check = async(req,res)=>{
             res.status(400).json({message:err.message});
         }
 }
-module.exports = {getRetailerInfo,addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check}
+let delet = async (req, res) => {
+    let { id } = req.params;
+    // console.log(id);
+    try {
+      let Retailer = await RetailerModel.findOne({ _id: id });
+      // console.log(Retailer);
+      if (Retailer) {
+        await RetailerModel.deleteOne({ _id: Retailer._id });
+        res
+          .status(200)
+          .json({ message: "Retailer deleted succeesfully", data: Retailer });
+      } else {
+        res.status(404).json({ message: "Retailer is not?? found" });
+      }
+    } catch (err) {
+      res.status(500).json({ message: err.message });
+    }
+  };
+module.exports = {getRetailerInfo,addNewRetailer,getAllRetailers,loginRetailer,editRetailerData , check ,delet}
