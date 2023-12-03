@@ -117,15 +117,16 @@ let getAllOrders =async (req, res) => {
           await RetailerModel.findOne({_id:prd.retailer_id}).then(res=>{
             prd.name = res.name;
             prd.email = res.email;
-            name.push(res?.name);
-            email.push(res?.email);
+            console.log(prd);
+            // name.push(res?.name);
+            // email.push(res?.email);
          })
          prds.push(prd)
 
         }))
       
       }))
-        res.status(200).json({ message: " Orders retrieved successfully" , Orders:prds , ret:{name,email}   });
+        res.status(200).json({ message: " Orders retrieved successfully" , Orders:prds   });
     } else {
       res.status(404).json({ message: "there is no order yet ..!" });
     }
