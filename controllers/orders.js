@@ -42,13 +42,24 @@ let getOrderByRetailerID = async (req, res)=>{
     let allOrders = await orderModel.find();
     let orders=[]
     
-    allOrders.forEach((order)=> {
-        order.cart_Customer.forEach((item)=>{
-          if (item.retailer_id == retailerID){
-            orders.push({...item,customerID: order.customer_Id,orderID: order._id})
+
+    await Promise.all(allOrders.map(async (order) => {
+      for (const item of order.cart_Customer) {
+        if (item.retailer_id === retailerID) {
+          const customer = await customerModel.findOne({ _id: order.customer_Id });
+          if (customer) {
+            orders.push({
+              ...item,
+              customerID: order.customer_Id,
+              orderID: order._id,
+              customerName: customer.name,
+              customerEmail: customer.email
+            });
           }
-        })
-    })
+        }
+      }
+    }));
+  
     res
       .status(200)
       .json(orders);
@@ -104,8 +115,6 @@ let deleteOrder = async (req, res) => {
 };
 
 let getAllOrders =async (req, res) => {
-  let name = []
-  let email  = [];
   let prds = [];
   try {
     let orders = await orderModel.find();
@@ -118,8 +127,6 @@ let getAllOrders =async (req, res) => {
             prd.name = res.name;
             prd.email = res.email;
             console.log(prd);
-            // name.push(res?.name);
-            // email.push(res?.email);
          })
          prds.push(prd)
 
