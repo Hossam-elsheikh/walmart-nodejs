@@ -136,7 +136,7 @@ let update = async (req, res) => {
 
   try {
     let newData = await customerModel.replaceOne({_id: id}, data);
-    console.log(newData);
+    // console.log(newData);
   } catch (err) {
     res.status(500).json({ message: err.message });
     // console.log(err.message);

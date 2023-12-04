@@ -30,7 +30,7 @@ let getPayment = async (req,res)=>{
     if(role !== "user") return res.status(401).json({message: 'You Are Not A User'});
     try{
         let payment = await paymentModel.findOne({customer_Id:id})
-        console.log(payment);
+        // console.log(payment);
         res.status(201).json({message:'payment successfully retrieved' , payment:payment})
     }catch(err){
         res.status(501).json({message:err.message})

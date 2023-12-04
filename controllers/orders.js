@@ -126,7 +126,7 @@ let getAllOrders =async (req, res) => {
           await RetailerModel.findOne({_id:prd.retailer_id}).then(res=>{
             prd.name = res.name;
             prd.email = res.email;
-            console.log(prd);
+            // console.log(prd);
          })
          prds.push(prd)
 
