@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 let orderSchema = mongoose.Schema({
-    status:{
-        type :String,
-        enum:["delivered" , "shipping" ,"Pending"],
-        default : "Pending",
-    },
+    
    customer_Id:{
         type: mongoose.SchemaTypes.ObjectId,
         ref:'Customer',
@@ -12,7 +8,10 @@ let orderSchema = mongoose.Schema({
     cart_Customer:{
         type:Array
     },
-
+    status:{
+        type :String,
+        default:'pending'
+    },
 },{timestamps: true,
 })
 
